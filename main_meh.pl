@@ -33,19 +33,46 @@ sub getFirstDegreeOfSeparation {
 	}
 	close(FILE);
 }
-
-
 #getFirstDegreeOfSeparation();
+
+
+sub createCoreSeqFile {
 my @coreSeq=Util::getLocalSequences("./db/core");
-Util::printArray(@coreSeq);
+#Util::printArray(@coreSeq);
 open (FILE, "> ./db/core.txt") || die "problem opening ./db/core.txt\n";
 	foreach (@coreSeq) {
 		print FILE $_."\n";
 	}
 	close(FILE);
+}
+#createCoreSeqFile();
+
+
+sub nonDec {
+my $infile = "A000010.txt";
+open(FH, $infile) or die "Cannot open $infile\n";
+while ( my $line = <FH> )
+{
+	chomp($line);
+	if (index($line, '%K') != -1) 
+	{
+		if (index($line, 'sign') != -1) 
+		{
+			print"$line\n\n";   
+			print"Discard\n\n";   
+		}
+		if (index($line, 'nonn') != -1) 
+		{
+			print"$line\n\n";   
+			print"Keep\n\n";   
+		}
+	}
+
+}
+}
 
 
 
 
-
-print("sdsadsas");
+my @var = Parser::parseSequence("A000010.txt", \&Parser::getFirstElements);
+Util::printArray(@var);

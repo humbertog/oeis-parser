@@ -48,4 +48,15 @@ sub getName {
 	return @ret;
 }
 
+sub getFirstElements {
+	my $string = shift;
+	# retrieves the id of the sequence that is being parsed to remove it from results
+	my $var = "";
+	$var = $1 if $string =~ /^%S\sA[0-9]{6,8}\s(.*)\n/mg;
+	$var = $var . $1 if $string =~ /^%T\sA[0-9]{6,8}\s(.*)\n/mg;
+	$var = $var . $1 if $string =~ /^%U\sA[0-9]{6,8}\s(.*)\n/mg;
+	my @ret = split(/,/,$var);
+	return @ret;
+}
+
 1;
