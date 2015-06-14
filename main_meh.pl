@@ -7,7 +7,7 @@ use strict;
 use warnings;
 
 
-# Create file with the sequences with 1 degree of separation from core seq:
+# Create file with the sequences with 1 degree of separation from core seq:12345
 sub getFirstDegreeOfSeparation {
 	# Get local core sequences:
 	my @local_core_sequences = Util::getLocalSequences("./db/core");
@@ -35,12 +35,17 @@ sub getFirstDegreeOfSeparation {
 }
 
 
-getFirstDegreeOfSeparation();
+#getFirstDegreeOfSeparation();
+my @coreSeq=Util::getLocalSequences("./db/core");
+Util::printArray(@coreSeq);
+open (FILE, "> ./db/core.txt") || die "problem opening ./db/core.txt\n";
+	foreach (@coreSeq) {
+		print FILE $_."\n";
+	}
+	close(FILE);
 
 
 
 
 
-
-
-
+print("sdsadsas");
