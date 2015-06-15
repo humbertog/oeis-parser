@@ -48,31 +48,74 @@ open (FILE, "> ./db/core.txt") || die "problem opening ./db/core.txt\n";
 #createCoreSeqFile();
 
 
-sub nonDec {
-my $infile = "A000010.txt";
-open(FH, $infile) or die "Cannot open $infile\n";
-while ( my $line = <FH> )
-{
-	chomp($line);
-	if (index($line, '%K') != -1) 
+sub findNonNegativeSequences {
+	my @var="";
+	my @universeSequence;
+	my @negSeq; #sign
+	my @nonNegSeq; #nonn
+	
+	my @seqPool=Util::getLocalSequences("./db/core");
+	my @degree1Seq=Util::getLocalSequences("./db/degree1");
+	push(@seqPool,@degree1Seq);  #@seqPool having all sequences
+	#Util::printArray(@seqPool);
+	my @seqPool1=("A000010","A000001sign","A000001notany");
+	#Util::printArray(@seqPool1);
+	for (my $i=0; $i < $#seqPool1+1; $i++)
 	{
-		if (index($line, 'sign') != -1) 
-		{
-			print"$line\n\n";   
-			print"Discard\n\n";   
-		}
-		if (index($line, 'nonn') != -1) 
-		{
-			print"$line\n\n";   
-			print"Keep\n\n";   
-		}
+		#print("$seqPool1[$i]\n");
+		@var = Parser::parseSequence("./db/core/$seqPool1[$i].txt", \&getKeyValues);
+		#Util::printArray(@var);	
+		if ( grep( /^nonn$/, @var ) ) {
+			#print "\nNon Neg for seq id: $seqPool1[$i]\n";
+			push @nonNegSeq, $seqPool1[$i];
+		}	
+		elsif ( grep( /^sign$/, @var ) ) {
+			#print "\nNeg for seq id: $seqPool1[$i]\n";
+			push @negSeq, $seqPool1[$i];
+		}	
+		else{
+			#print "\nOther Case: $seqPool1[$i]\n";
+			push @universeSequence, $seqPool1[$i];
+		}	
 	}
-
+	Util::printArray("nonNegSeq:\n@nonNegSeq ");
+	#Util::printArray("NegSeq:\n@negSeq ");
+	#Util::printArray("otherSeq:\n@universeSequence ");
+	return @nonNegSeq;
 }
+
+findNonNegativeSequences(); 
+
+
+sub writeArrayToFile
+{
+	my $fileName = shift;
+	my $arrayToWrite_ref = shift;
+	open (FILE, "> $fileName") || die "problem opening $fileName\n";
+	foreach (@{$arrayToWrite_ref}) {
+		print FILE $_."\n";
+	}
+	close(FILE);
 }
 
 
 
 
-my @var = Parser::parseSequence("A000010.txt", \&Parser::getFirstElements);
-Util::printArray(@var);
+
+sub getKeyValues {
+	my $string = shift;
+	# retrieves the id of the sequence that is being parsed to remove it from results
+	my $var = "";
+	$var = $1 if $string =~ /^%K\sA[0-9]{6,8}\s(.*)\n/mg;
+	my @ret = split(/,/,$var);
+	return @ret;
+}
+
+#my @var = Parser::parseSequence("./db/core/A000010.txt", \&getKeyValues);
+#Util::printArray(@var);
+
+
+
+#my @var = Parser::parseSequence("A000010.txt", \&Parser::getFirstElements);
+#Util::printArray(@var);
+
