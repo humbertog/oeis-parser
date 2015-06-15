@@ -147,6 +147,38 @@ sub getWeekDays {
 	return @fechas;
 }
 
+sub writeArrayToFile
+{
+	my $fileName = shift;
+	my (@arrayToWrite_ref) = @_;
+	open (FILE, "> $fileName") || die "problem opening $fileName\n";
+	 foreach (@arrayToWrite_ref) {
+		 print FILE $_."\n";
+	 }
+	close(FILE);
+}
+
+#Subroutine to get the Key value i.e. %K telling if the seq is non negative->'nonn' or negative->'sign'
+sub getKeyValues {
+	my $string = shift;
+	# retrieves the id of the sequence that is being parsed to remove it from results
+	my $var = "";
+	$var = $1 if $string =~ /^%K\sA[0-9]{6,8}\s(.*)\n/mg;
+	my @ret = split(/,/,$var);
+	return @ret;
+}
+
+#Subroutine to find IDs of all core sequences and write them to file named core.txt
+#We have to change it later as now we dnt have the folder "CORE" for core sequences, get them from the file core-sequence.txt
+sub createCoreSeqFile {
+my @coreSeq=Util::getLocalSequences("./db/core");
+#Util::printArray(@coreSeq);
+open (FILE, "> ./db/core.txt") || die "problem opening ./db/core.txt\n";
+	foreach (@coreSeq) {
+		print FILE $_."\n";
+	}
+	close(FILE);
+}
 
 
 1;

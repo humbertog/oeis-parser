@@ -33,5 +33,46 @@ sub getFirstDegreeOfSeparation {
 	close(FILE);
 }
 
+#Subroutine to find all Non negative sequences and write them to file named NonNegSequences.txt
+sub findNonNegativeSequences {
+	my @var="";
+	my @universeSequence;
+	my @negSeq; #sign
+	my @nonNegSeq; #nonn
+	
+	#Getting all sequence IDs from the folder containing CORE and DEGREE1 sequences
+	my @seqPool=Util::getLocalSequences("./db/sequences");
+	#print $#seqPool;
+	#print("\n\n");
+	for (my $i=0; $i < $#seqPool+1; $i++)
+	{
+		@var = Parser::parseSequence("./db/sequences/$seqPool[$i].txt", \&Util::getKeyValues);
+		#Util::printArray(@var);	
+		if ( grep( /^nonn$/, @var ) ) {
+			#print "\nNon Neg for seq id: $seqPool[$i]\n";
+			push @nonNegSeq, $seqPool[$i];
+		}	
+		elsif ( grep( /^sign$/, @var ) ) {
+			#print "\nNeg for seq id: $seqPool[$i]\n";
+			push @negSeq, $seqPool[$i];
+		}	
+		else{
+			#print "\nOther Case: $seqPool[$i]\n";
+			push @universeSequence, $seqPool[$i];
+		}	
+	}
+	#Printing Arrays and its count
+	
+	#Util::printArray("nonNegSeq:\n@nonNegSeq ");
+	#Util::printArray("NegSeq:\n@negSeq ");
+	#Util::printArray("otherSeq:\n@universeSequence ");
+	#print $#nonNegSeq;
+	#print $#negSeq;
+	#print $#universeSequence;
+	&Util::writeArrayToFile("./db/NonNegSequences.txt",@nonNegSeq);
+	return @nonNegSeq;
+	
+}
+
 
 1;
