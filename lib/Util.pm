@@ -12,6 +12,13 @@ sub printArray {
 	}
 }
 
+sub trim {
+	my $string = shift;
+	$string =~ s/^\s+//;
+	$string =~ s/\s+$//;
+	return $string;
+}
+
 # Returns the SET difference between arrays: (1,2,3,4) - (2,4,5) = (1,3)
 sub arrayDifference {
 	my $from_ref = shift;
@@ -80,7 +87,33 @@ sub getLocalSequences {
 	# Remove the .txt
 #	my($fecha_curva) = $_ =~ /AGROCURVAS(\w+)\.zip/;
 	my @local_seq = map {$_ =~ /(A[0-9]{6}).txt/} @local_files;
+	@local_seq = map {trim($_)} @local_seq;
 	return @local_seq;
+}
+
+#
+sub checkMonoticity {
+	my $array_ref = shift;
+	my $non_decreasing_flag = 1;
+	my $non_increasing_flag = 1;
+	my $decreasing_flag = 1;
+	my $increasing_flag = 1;
+	for my $i (0 .. ($#{$array_ref} - 1)) {
+		$decreasing_flag = 0 if $array_ref->[$i] <= $array_ref->[$i+1];
+		$increasing_flag = 0 if $array_ref->[$i] >= $array_ref->[$i+1];
+		$non_decreasing_flag = 0 if $array_ref->[$i] > $array_ref->[$i+1];
+		$non_increasing_flag = 0 if $array_ref->[$i] < $array_ref->[$i+1];
+	}
+	my $monoticity = "none";
+	$monoticity = "increasing" if $increasing_flag and $non_decreasing_flag;
+	$monoticity = "decreasing" if $decreasing_flag and $non_increasing_flag;
+	
+	$monoticity = "non_decreasing" if !$increasing_flag and $non_decreasing_flag;
+	$monoticity = "non_increasing" if !$decreasing_flag and $non_increasing_flag;
+	
+	$monoticity = "constant" if $non_decreasing_flag and $non_increasing_flag;
+	
+	return $monoticity;
 }
 
 ##################################################################

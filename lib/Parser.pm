@@ -1,22 +1,18 @@
 package Parser;
+use lib './lib';
+use Util;
 
 sub parseSequence {
 	# @args = ($filename, parser_ref1, parser_ref2, ...)
-	my $filename = shift;
+	my ($filename, $parser) = @_;
 	open FILE, $filename or die "Couldn't open file: $!"; 
 	my $content_string = "";
 	while (<FILE>){
 		$content_string .= $_;
 	}
 	close FILE;
-	
 	# Uses the parser_refs parser funtion refs
-	my $parser; 
-	my @result;
-	while (@_) {
-		$parser = shift;
-		@result = $parser->($content_string);
-	}
+	my @result = $parser->($content_string);
 	return @result;
 }
 
@@ -31,7 +27,7 @@ sub getReferences {
 	my @seq_clean;
 	foreach (@seq) {
 		if ($_ ne $id) {
-			push @seq_clean, $_;
+			push @seq_clean, Util::trim($_);
 		}
 	}
 	
