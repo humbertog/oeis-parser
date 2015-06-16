@@ -55,4 +55,13 @@ sub getFirstElements {
 	return @ret;
 }
 
+sub getKeyValues {
+	my $string = shift;
+	# retrieves the id of the sequence that is being parsed to remove it from results
+	my $var = "";
+	$var = $1 if $string =~ /^%K\sA[0-9]{6,8}\s(.*)\n/mg;
+	my @ret = split(/,/,$var);
+	return @ret;
+}
+
 1;

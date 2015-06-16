@@ -4,6 +4,8 @@ use Util;
 
 # Create file with the sequences with 1 degree of separation from core seq:
 sub getFirstDegreeOfSeparation {
+	# args: the directory with the sequences from which first degree is going to be obtained
+	my $dir = shift;
 	# Get local core sequences:
 	my @local_core_sequences = Util::getLocalSequences("./db/core");
 	my @seq_referenced_ids;
@@ -73,6 +75,42 @@ sub findNonNegativeSequences {
 	return @nonNegSeq;
 	
 }
+
+sub classifyByMonotonicity {
+	# args: the file with the sequence id's to classify
+	my $filename = shift;
+	open FILE, $filename or die "Couldn't open file: $!"; 
+	my @content_array;
+	while (<FILE>){
+		chomp $_;
+		push @content_array, $_;
+	}
+	close FILE;
+	
+	my @none_seq;
+	my @constant_seq;
+	my @nondecreasing_seq;
+	my @nonincreasing_seq;
+	my @decreasing_seq;
+	my @increasing_seq;
+	
+	foreach my $seq (@content_array) {
+		my @first_elem = Parser::parseSequence("./db/sequences/$seq.txt", \&Parser::getFirstElements);
+		my $monoticity = Util::checkMonoticity(\@first_elem);
+		push (@none_seq, $seq) if ($monoticity eq "none");
+		push (@constant_seq, $seq) if ($monoticity eq "constant");
+		push (@nondecreasing_seq, $seq) if ($monoticity eq "non_decreasing");
+		push (@nonincreasing_seq, $seq) if ($monoticity eq "non_increasing");
+		push (@decreasing_seq, $seq) if ($monoticity eq "decreasing");
+		push (@increasing_seq, $seq) if ($monoticity eq "increasing");
+	}
+	Util::writeArrayToFile("./db/mono_none.txt", @none_seq);
+	Util::writeArrayToFile("./db/mono_constant.txt", @constant_seq);
+	Util::writeArrayToFile("./db/mono_nondecreasing.txt", @nondecreasing_seq);
+	Util::writeArrayToFile("./db/mono_nonincreasing.txt", @nonincreasing_seq);
+	Util::writeArrayToFile("./db/mono_decreasing.txt", @decreasing_seq);
+	Util::writeArrayToFile("./db/mono_increasing.txt", @increasing_seq);
+}	
 
 
 1;

@@ -93,6 +93,7 @@ sub getLocalSequences {
 
 #
 sub checkMonoticity {
+	# args: an array ref on numbers
 	my $array_ref = shift;
 	my $non_decreasing_flag = 1;
 	my $non_increasing_flag = 1;
