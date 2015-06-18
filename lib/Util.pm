@@ -171,6 +171,7 @@ sub getKeyValues {
 
 #Subroutine to find IDs of all core sequences and write them to file named core.txt
 #We have to change it later as now we dnt have the folder "CORE" for core sequences, get them from the file core-sequence.txt
+
 sub createCoreSeqFile {
 my @coreSeq=Util::getLocalSequences("./db/core");
 #Util::printArray(@coreSeq);
@@ -179,6 +180,194 @@ open (FILE, "> ./db/core.txt") || die "problem opening ./db/core.txt\n";
 		print FILE $_."\n";
 	}
 	close(FILE);
+}
+
+
+sub findMinLenOfInitialElem{
+	my @seq;
+	my @seqFirseElemLen;
+	#my $infile = "./db/all.txt";
+	my $infile = shift;
+	@seq=readFileLinebyLineInArray($infile);
+	my @seqFirstElem;
+	for (my $i=0; $i < $#seq+1; $i++)
+		{
+			@seqFirstElem = Parser::parseSequence("./db/sequences/$seq[$i].txt", \&Parser::getFirstElements);
+			push @seqFirseElemLen,$#seqFirstElem;
+			#print("SeqID: $seq[$i]    Seq Len: $#seqFirstElem\n")
+		}
+	use List::Util qw( min max );
+	my $minlen= min @seqFirseElemLen;
+	#print("Min len of Initial elements among the list of sequences provided: $minlen\n");
+	return $minlen;
+}
+
+#create First Elelment File
+#do it in data structure
+sub createFirstEmlemtFile{
+	my @seq;
+	my @seqFirseElemLen;
+	my $seqStringDS;
+	my @seqStringDSArray;
+	
+	#my $infile = "./db/all.txt";
+	my $infile = shift;
+	
+	@seq=readFileLinebyLineInArray($infile);
+	my @seqFirstElem;
+	for (my $i=0; $i < $#seq+1; $i++)
+		{
+			@seqFirstElem = Parser::parseSequence("./db/sequences/$seq[$i].txt", \&Parser::getFirstElements);
+			push @seqFirseElemLen,$#seqFirstElem;
+			#print("SeqID: $seq[$i]    Seq Len: $#seqFirstElem\n 1st Elem: @seqFirstElem\n")
+			
+			$seqStringDS="$seq[$i] @seqFirstElem";
+			##print"$seqStringDS\n";
+			push @seqStringDSArray,$seqStringDS;
+			
+		}
+	open (FILE, "> ./db/SeqInitialElements.txt") or die "problem opening ./db/core.txt\n";
+	foreach (@seqStringDSArray) {
+		print FILE $_."\n";
+	}
+	close(FILE);
+
+}
+
+
+
+sub computeComplement{
+	my $seq = shift;
+	my @seqFirstElem = Parser::parseSequence($seq, \&Parser::getFirstElements);
+	my $maxElem=max @seqFirstElem;
+	#create Integer array of  len of Seq
+	my @intArray;
+	for (my $i=1; $i <= $maxElem; $i++)
+	{
+		push @intArray,$i;
+	}	
+	#complement
+	#print "Len: $#seqFirstElem";
+	#print "\nS1:@seqFirstElem\n";
+	#print "\nLen: $#intArray";
+	#print  "\nInt:@intArray\n";
+				
+	my @list1 = @intArray;
+	my @list2 = @seqFirstElem;
+
+	my @diff;
+	my %repeats;
+	for (@list1, @list2) { $repeats{$_}++ }
+	for (keys %repeats) {
+	    push @diff, $_ unless $repeats{$_} > 1;
+	}
+	my @seqFirstElemComp=@diff;
+
+	my @seqFirstElemCompSort = sort {$a <=> $b} @seqFirstElemComp;
+	#print "\nLen of Comp: $#seqFirstElemCompSort\n";
+	#print "\nS1 Comp:@seqFirstElemCompSort\n\n";
+	
+	#Part of shortening the length of computed complement comented, now its returning whole array computed
+		# my $compRetLen=0;
+		# if($#seqFirstElemCompSort <= $#seqFirstElem)
+		# {
+			# $compRetLen=$#seqFirstElemCompSort;
+		# }
+		# else
+		# {
+			# $compRetLen=$#seqFirstElem;
+		# }
+		
+	# my @compRet;
+	# for (my $i=0; $i <= $compRetLen; $i++)
+	# {
+	# push @compRet,$seqFirstElemCompSort[$i];
+	# }
+	# #print "\nLen of Comp: $#compRet\n";
+	# #print "S1 Comp:@compRet\n\n";
+
+	# return @compRet;
+	
+	return @seqFirstElemCompSort;
+}
+
+
+#Not used anymore as now we are handling the complement by Hash Map not file
+sub findComplementSeqIDfromFile{
+	my (@seqComp)=@_;
+	my $seqCompString = join(" ", @seqComp);
+	#print $seqCompString;
+	my $infile = "./db/SeqInitialElements.txt";
+	open(FH, $infile) or die "Cannot open $infile\n";
+	my $complSeqID=0;
+	while ( my $line = <FH> )
+	{
+		chomp($line);		
+		#Package Name
+		if (index($line, $seqCompString) != -1) 
+		{
+			print "\nYes COmplement found\n$line\n";
+			$complSeqID = $1 if $line =~ /^(A[0-9]{6,8})\s/mg;
+		}
+	}			
+	close(FH);
+	return $complSeqID;
+}
+
+
+#returns HashMap
+sub createFirstEmlemtDataStr{
+	
+	my @seq;
+	my @seqFirseElemLen;
+	
+	#my $infile = "./db/all.txt";
+	my $infile = shift;
+
+	@seq=readFileLinebyLineInArray($infile);
+	my %seqHasMap;
+	my @seqFirstElem;
+	my $array_ref;
+	for (my $i=0; $i < $#seq+1; $i++)
+		{
+			@seqFirstElem = Parser::parseSequence("./db/sequences/$seq[$i].txt", \&Parser::getFirstElements);
+			$array_ref=[@seqFirstElem];
+			$seqHasMap{$seq[$i]} =$array_ref;   # reference to an anonymous array
+			#print $seqHasMap{$seq[$i]};
+			push @seqFirseElemLen,$#seqFirstElem;
+			#print("SeqID: $seq[$i]    Seq Len: $#seqFirstElem\n 1st Elem: @seqFirstElem\n")
+			
+		}
+	# # Access elements		
+	# print"1st\n";	
+	# print $seqHasMap{A001950}[0];	#acces the reference
+
+	# print"\n2nd\n";	
+	# my $array_reference=$seqHasMap{A000201};
+	# print $array_reference;
+	# my @array=@$array_reference;
+	# print"\n";	
+	# print @array;
+	
+	return %seqHasMap;
+}
+
+
+
+#Reads file line by line and puts in an array.
+sub readFileLinebyLineInArray()
+{
+	
+	my $infile = shift;
+	my @seq;
+	open(FH, $infile) or die "Cannot open $infile\n";
+	while ( my $line = <FH> )
+	{
+		chomp($line);
+		push @seq,$line;
+	}
+	close(FH);	
+	return @seq;
 }
 
 

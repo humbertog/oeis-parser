@@ -44,6 +44,7 @@ sub getName {
 	return @ret;
 }
 
+#takes in the string containing whole content of seq file
 sub getFirstElements {
 	my $string = shift;
 	# retrieves the id of the sequence that is being parsed to remove it from results
