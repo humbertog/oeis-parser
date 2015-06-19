@@ -3,11 +3,12 @@ use lib './lib';
 use Util;
 
 # Create file with the sequences with 1 degree of separation from core seq:
+# The sequences that are mentioned in the files
 sub getFirstDegreeOfSeparation {
 	# args: the directory with the sequences from which first degree is going to be obtained
-	my $dir = shift;
+	my ($input_dir, $output_file)  = @_;
 	# Get local core sequences:
-	my @local_core_sequences = Util::getLocalSequences("./db/core");
+	my @local_core_sequences = Util::getLocalSequences($input_dir);
 	my @seq_referenced_ids;
 	# Get sequences referenced by the core sequences:
 	for my $i (0 .. $#local_core_sequences) {
@@ -28,7 +29,7 @@ sub getFirstDegreeOfSeparation {
 	print $#new_sequences + 1 . "\n";
 
 	# Write new sequences to file (they will later be downloaded):
-	open (FILE, "> ./db/degree1.txt") || die "problem opening ./db/degree1.txt\n";
+	open (FILE, "> $output_file") || die "problem opening $output_file\n";
 	foreach (@new_sequences) {
 		print FILE $_."\n";
 	}

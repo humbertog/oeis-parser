@@ -1,0 +1,826 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY seq7 "http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq7:" >
+    <!ENTITY seq8 "http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq8:" >
+    <!ENTITY seq1 "http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq1:" >
+    <!ENTITY seq4 "http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq4:" >
+    <!ENTITY seq2 "http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq2:" >
+    <!ENTITY seq6 "http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq6:" >
+    <!ENTITY seq5 "http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq5:" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#"
+     xml:base="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl"
+     xmlns:seq7="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq7:"
+     xmlns:seq8="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq8:"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:seq1="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq1:"
+     xmlns:seq2="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq2:"
+     xmlns:seq4="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq4:"
+     xmlns:seq5="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq5:"
+     xmlns:seq6="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq6:">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasCardinality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasCardinality">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CardinalityProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasInverse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasInverse">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicityProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasProperty">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SequenceProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SequenceProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRangeIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRangeIn">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRelation">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasSubsequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasSubsequence">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRelation"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#isSubsequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#isSubsequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#isSubsequence">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasFirstElements -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasFirstElements">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CardinalityProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CardinalityProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SequenceProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ConstantSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ConstantSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Constant"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasingSequence"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonIncreasingSequence"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRangeSequence"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRangeSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRangeSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasCardinality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRange"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#InfiniteRangeSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#InfiniteRangeSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#InfiniteRangeSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasCardinality"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#InfiniteRange"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicityProperty"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasingSequence"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonIncreasingSequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicityProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicityProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SequenceProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NegativeSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NegativeSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRangeIn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NegativeNumbers"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonPositiveSequence"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonNegativeSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasingSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasingSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasing"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicSequence"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyDecreasingSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonIncreasingSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonIncreasingSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonIncreasing"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicSequence"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyIncreasingSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonNegativeSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonNegativeSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRangeIn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonNegativeNumbers"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonPositiveSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonPositiveSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRangeIn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonPositiveNumbers"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PositiveSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PositiveSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PositiveSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRangeIn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PositiveNumbers"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonNegativeSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SequenceProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRangeIn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#IntegerNumbers"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRangeSequence"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#InfiniteRangeSequence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicityProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SequenceProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasRangeIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasCardinality"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CardinalityProperty"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SequenceProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SequenceProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SequenceProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyDecreasingSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyDecreasingSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyDecreasing"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonIncreasingSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyIncreasingSequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyIncreasingSequence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyIncreasing"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasingSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Constant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Constant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicityProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#EvenNumbers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#EvenNumbers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CardinalityProperty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SequenceProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#InfiniteRange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#InfiniteRange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CardinalityProperty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SequenceProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#IntegerNumbers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#IntegerNumbers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NegativeNumbers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NegativeNumbers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicityProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonIncreasing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonIncreasing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicityProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonNegativeNumbers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonNegativeNumbers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonPositiveNumbers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonPositiveNumbers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#OddNumbers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#OddNumbers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PositiveNumbers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PositiveNumbers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PrimeNumbers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PrimeNumbers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RangeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyDecreasing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyDecreasing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicityProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyIncreasing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyIncreasing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MonotonicityProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq1:fin_inc_pos -->
+
+    <owl:NamedIndividual rdf:about="&seq1;fin_inc_pos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <hasCardinality rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRange"/>
+        <hasRangeIn rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PositiveNumbers"/>
+        <hasMonotonicity rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyIncreasing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq2:inf_nondec -->
+
+    <owl:NamedIndividual rdf:about="&seq2;inf_nondec">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <hasCardinality rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#InfiniteRange"/>
+        <hasMonotonicity rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRangeSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq4:fin_nondec_inc -->
+
+    <owl:NamedIndividual rdf:about="&seq4;fin_nondec_inc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <hasCardinality rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRange"/>
+        <hasMonotonicity rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasing"/>
+        <hasMonotonicity rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyIncreasing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq5:fin_const -->
+
+    <owl:NamedIndividual rdf:about="&seq5;fin_const">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <hasMonotonicity rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasing"/>
+        <hasMonotonicity rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonIncreasing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq6:fin_const -->
+
+    <owl:NamedIndividual rdf:about="&seq6;fin_const">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <hasMonotonicity rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Constant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq7:zero_sequence -->
+
+    <owl:NamedIndividual rdf:about="&seq7;zero_sequence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <hasRangeIn rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonNegativeNumbers"/>
+        <hasRangeIn rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonPositiveNumbers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq8:inf_noninc -->
+
+    <owl:NamedIndividual rdf:about="&seq8;inf_noninc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <hasRangeIn rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#EvenNumbers"/>
+        <hasCardinality rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#InfiniteRange"/>
+        <hasRangeIn rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NegativeNumbers"/>
+        <hasMonotonicity rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonIncreasing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#test1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#test1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&seq1;fin_inc_pos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq3"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&seq1;fin_inc_pos"/>
+            <rdf:Description rdf:about="&seq8;inf_noninc"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&seq2;inf_nondec"/>
+            <rdf:Description rdf:about="&seq7;zero_sequence"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRange"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#InfiniteRange"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&seq4;fin_nondec_inc"/>
+            <rdf:Description rdf:about="&seq8;inf_noninc"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&seq2;inf_nondec"/>
+            <rdf:Description rdf:about="&seq8;inf_noninc"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&seq7;zero_sequence"/>
+            <rdf:Description rdf:about="&seq8;inf_noninc"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&seq5;fin_const"/>
+            <rdf:Description rdf:about="&seq8;inf_noninc"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#seq3"/>
+            <rdf:Description rdf:about="&seq8;inf_noninc"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&seq6;fin_const"/>
+            <rdf:Description rdf:about="&seq8;inf_noninc"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

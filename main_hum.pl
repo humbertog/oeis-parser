@@ -2,6 +2,7 @@
 
 use lib './lib';
 use Parser;
+use Scripts;
 use Util;
 use strict;
 use warnings;
