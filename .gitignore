@@ -1,3 +1,4 @@
 db/core/*
 db/degree1/*
 db/sequences/*
+model/catalog-v001.xml

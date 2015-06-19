@@ -65,4 +65,25 @@ sub getKeyValues {
 	return @ret;
 }
 
+sub getOffset {
+	my $string = shift;
+	# retrieves the id of the sequence that is being parsed to remove it from results
+	my $var = "";
+	$var = $1 if $string =~ /^%O\sA[0-9]{6,8}\s(.*)\n/mg;
+	my @ret = split(/,/,$var);
+	return @ret;
+}
+
+sub getFormula {
+	my $string = shift;
+	# retrieves the id of the sequence that is being parsed to remove it from results
+	my $var = "";
+	$var = $1 if $string =~ /^%F\sA[0-9]{6,8}\s(.*)\n/mg;
+	my @ret;
+	push @ret, $var;
+	return @ret;
+}
+
+
+
 1;
