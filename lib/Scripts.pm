@@ -98,14 +98,14 @@ sub classifyByMonotonicity {
 	foreach my $seq (@content_array) {
 		my @first_elem = Parser::parseSequence("./db/sequences/$seq.txt", \&Parser::getFirstElements);
 		my $monoticity = Util::checkMonoticity(\@first_elem);
-		push (@none_seq, $seq) if ($monoticity eq "none");
+		push (@none_seq, $seq) if ($monoticity eq "nonmonotonic");
 		push (@constant_seq, $seq) if ($monoticity eq "constant");
 		push (@nondecreasing_seq, $seq) if ($monoticity eq "non_decreasing");
 		push (@nonincreasing_seq, $seq) if ($monoticity eq "non_increasing");
 		push (@decreasing_seq, $seq) if ($monoticity eq "decreasing");
 		push (@increasing_seq, $seq) if ($monoticity eq "increasing");
 	}
-	Util::writeArrayToFile("./db/mono_none.txt", @none_seq);
+	Util::writeArrayToFile("./db/mono_nonmonotonic.txt", @none_seq);
 	Util::writeArrayToFile("./db/mono_constant.txt", @constant_seq);
 	Util::writeArrayToFile("./db/mono_nondecreasing.txt", @nondecreasing_seq);
 	Util::writeArrayToFile("./db/mono_nonincreasing.txt", @nonincreasing_seq);
