@@ -1,0 +1,30 @@
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#A000004">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+<hasName rdf:datatype="&xsd;string">Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.</hasName>
+<hasFirstElements rdf:datatype="&xsd;string">1,3,4,6,8,9,11,12,14,16,17,19,21,22,24,25,27,29,30,32,33,35,37,38,40,42,43,45,46,48,50,51,53,55,56,58,59,61,63,64,66,67,69,71,72,74,76,77,79,80,82,84,85,87,88,90,92,93,95,97,98,100,101,103,105,106,108,110</hasFirstElements>
+<hasFormula rdf:datatype="&xsd;string">Zeckendorf expansion of n (cf. A035517) ends with an even number of 0's.</hasFormula>
+<hasKeywords rdf:datatype="&xsd;string">nonn easy nice changed</hasKeywords>
+<hasOffset rdf:datatype="&xsd;string">1 2</hasOffset>
+</owl:NamedIndividual>
+
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#A000004">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+<hasName rdf:datatype="&xsd;string">Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.</hasName>
+<hasFirstElements rdf:datatype="&xsd;string">1,3,4,6,8,9,11,12,14,16,17,19,21,22,24,25,27,29,30,32,33,35,37,38,40,42,43,45,46,48,50,51,53,55,56,58,59,61,63,64,66,67,69,71,72,74,76,77,79,80,82,84,85,87,88,90,92,93,95,97,98,100,101,103,105,106,108,1102,5,7,10,13,15,18,20,23,26,28,31,34,36,39,41,44,47,49,52,54,57,60,62,65,68,70,73,75,78,81,83,86,89,91,94,96,99,102,104,107,109,112,115,117,120,123,125,128,130,133,136,138,141,143,146,149,151,154,157</hasFirstElements>
+<hasFormula rdf:datatype="&xsd;string">a(n) = n + floor(2*n*phi). In general, floor(n*phi^m) = Fibonacci(m-1)*n + floor(Fibonacci(m)*n*phi). - _Benoit Cloitre_, Mar 18 2003</hasFormula>
+<hasKeywords rdf:datatype="&xsd;string">nonn easy nice</hasKeywords>
+<hasOffset rdf:datatype="&xsd;string">1 1</hasOffset>
+</owl:NamedIndividual>
+
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#A000004">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+<hasName rdf:datatype="&xsd;string">Sequence and first differences (A030124) together list all positive numbers exactly once.</hasName>
+<hasFirstElements rdf:datatype="&xsd;string">1,3,4,6,8,9,11,12,14,16,17,19,21,22,24,25,27,29,30,32,33,35,37,38,40,42,43,45,46,48,50,51,53,55,56,58,59,61,63,64,66,67,69,71,72,74,76,77,79,80,82,84,85,87,88,90,92,93,95,97,98,100,101,103,105,106,108,1102,5,7,10,13,15,18,20,23,26,28,31,34,36,39,41,44,47,49,52,54,57,60,62,65,68,70,73,75,78,81,83,86,89,91,94,96,99,102,104,107,109,112,115,117,120,123,125,128,130,133,136,138,141,143,146,149,151,154,1571,3,7,12,18,26,35,45,56,69,83,98,114,131,150,170,191,213,236,260,285,312,340,369,399,430,462,495,529,565,602,640,679,719,760,802,845,889,935,982,1030,1079,1129,1180,1232,1285,1339,1394,1451,1509,1568,1628,1689</hasFirstElements>
+<hasFormula rdf:datatype="&xsd;string">a(n) = a(n-1) + c(n-1) for n >= 2, where a(1)=1, a( ) increasing, c( ) = complement of a( ) (c is the sequence A030124).</hasFormula>
+<hasKeywords rdf:datatype="&xsd;string">nonn easy nice changed</hasKeywords>
+<hasOffset rdf:datatype="&xsd;string">1 2</hasOffset>
+</owl:NamedIndividual>
+
+
