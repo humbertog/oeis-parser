@@ -21,7 +21,7 @@ my $infile = "./db/compool.txt";createIndividuals($infile);
 
 	my $seqXMLset;
 	my $seqXMLsetAll;
-
+#chan
 	my @seqName;
 	my $seqFirseElemLenStr;
 	my @seqFormula;
