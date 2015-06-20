@@ -1,0 +1,16 @@
+/pellet.sh consistency ~/Desktop/Sequence_v1.3.owl
+
+
+1) Running FiniteRangeSequence query takes too much time
+the reason is that sequence = infinite union finite.
+
+2) If we add all different to the individuals, then the queries take more time
+
+No 1) and 2)
+Timer summary:
+Name              | Total (ms)
+==============================
+main              |      60956
+loading           |      19901
+consistency check |      40824
+

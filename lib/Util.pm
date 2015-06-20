@@ -105,12 +105,12 @@ sub checkMonoticity {
 		$non_decreasing_flag = 0 if $array_ref->[$i] > $array_ref->[$i+1];
 		$non_increasing_flag = 0 if $array_ref->[$i] < $array_ref->[$i+1];
 	}
-	my $monoticity = "none";
+	my $monoticity = "no_monotonic";
 	$monoticity = "increasing" if $increasing_flag and $non_decreasing_flag;
 	$monoticity = "decreasing" if $decreasing_flag and $non_increasing_flag;
 	
-	$monoticity = "non_decreasing" if !$increasing_flag and $non_decreasing_flag;
-	$monoticity = "non_increasing" if !$decreasing_flag and $non_increasing_flag;
+	$monoticity = "nondecreasing" if !$increasing_flag and $non_decreasing_flag;
+	$monoticity = "nonincreasing" if !$decreasing_flag and $non_increasing_flag;
 	
 	$monoticity = "constant" if $non_decreasing_flag and $non_increasing_flag;
 	
@@ -355,7 +355,7 @@ sub createFirstEmlemtDataStr{
 
 
 #Reads file line by line and puts in an array.
-sub readFileLinebyLineInArray()
+sub readFileLinebyLineInArray
 {
 	
 	my $infile = shift;
@@ -369,6 +369,36 @@ sub readFileLinebyLineInArray()
 	close(FH);	
 	return @seq;
 }
+
+sub xml_special_char {
+	my $string = shift;
+	$string =~ s/&/&amp;/g;
+	$string =~ s/</&lt;/g;
+	$string =~ s/>/&gt;/g;
+	$string =~ s/"/&quot;/g;
+	$string =~ s/'/&apos;/g;
+	#$string =~ s/á/a/g;
+	#$string =~ s/é/e/g;
+	#$string =~ s/í/i/g;
+	#$string =~ s/ó/o/g;
+	#$string =~ s/ú/u/g;
+	#$string =~ s/è/e;/g;
+	#$string =~ s/ń/n;/g;
+	#$string =~ s/ö/o;/g;
+	#$string =~ s/ü/u;/g;
+	#$string =~ s/ő/o;/g;
+	
+	
+		
+#	$string =~ s/—/-/g;
+	$string =~ s/å/a/g;
+	$string =~ s/™//g;
+#	$string =~ s/[^!-~\s]//g;
+	return $string;
+}
+
+
+
 
 
 1;
