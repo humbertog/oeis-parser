@@ -202,15 +202,11 @@ sub createIndividuals {
 		# Add different individual statement
 		$diffInd .= "</owl:distinctMembers>\n </owl:AllDifferent>";
 #		open (FILE, ">> ./db_owl/XML_Individuals.rdf") or die "problem opening ./db_owl/XML_Individuals.rdf\n";
-	#	print FILE"$diffInd";
+#		print FILE"$diffInd";
 #		print FILE "\n</rdf:RDF>";
 #		close(FILE);
 
-		  
-		
-		
-		
-	
+
 }
 
 

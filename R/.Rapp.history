@@ -1,0 +1,1650 @@
+library(twitteR)#
+library(RMySQL)#
+#
+# Auth#
+consumer_key <- "lWASO4X80ZXvoQNuLqy6pvIxT"#
+consumer_secret <- "Y02GuODW95cYQnj35UYA3UkIqc6pKI4xfHgvnJpzf4G1xb9YPI"#
+token <- "44076237-ogvrWcaKoDjco1ADdoF6hP8fH7x9HOUfsjkvdhOcW"#
+token_secret <- "yEPDpZFs4B7LDkx70nwu6x23l8BPzMKcWVGKSK9N107Dc"#
+#
+db_database <- "twitter"#
+db_host <- "localhost"#
+db_user <- "root"#
+db_pass <- ""#
+#
+setup_twitter_oauth(consumer_key, consumer_secret, access_token=token, access_secret=token_secret)#
+register_mysql_backend("twitter", "localhost", "root", "")#
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, database=db_database)
+user <- getUser(user = "unadiana")
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		print(u$id)#
+		#store_users_db(fol)#
+		#f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		#dbWriteTable(conn, "follower", f_df)#
+	}#
+}#
+#
+getFollowers_list(conn, list(user))
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol)#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, "follower", f_df)#
+	}#
+}
+db_database <- "twitter"#
+db_host <- "localhost"#
+db_user <- "root"#
+db_pass <- ""
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, database=db_database)
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, "follower", f_df)#
+	}#
+}#
+#
+getFollowers_list(conn, list(user))
+?write.table
+?dbWriteTable
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df)#
+	}#
+}#
+#
+getFollowers_list(conn, list(user))
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE)#
+	}#
+}#
+#
+getFollowers_list(conn, list(user))
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		print(f_df)#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE)#
+	}#
+}#
+#
+getFollowers_list(conn, list(user))
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		print(f_df)#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+	}#
+}#
+#
+getFollowers_list(conn, list(user))
+getFollowers_list(conn, list(user))
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+	}#
+}#
+#
+getFollowers_list(conn, list(user))
+#################################
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	i <- 0 #
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	i <- 0 #
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 100 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+warnings()
+user <- getUser(user = "PRDmexico")
+userT <- userTimeline("unadiana", n=100, includeRts = TRUE)
+userT <- userTimeline("PRDmexico", n=100, includeRts = TRUE)
+userT
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	i <- 1#
+	for(u in u_list) {#
+		print(i)#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 100 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	i <- 1#
+	for(u in u_list) {#
+		print(u)#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 100 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+getFollowers_list(conn, list(user), n=NULL)
+user <- getUser(user = c("PRDmexico", "PRI_Nacional", "AccionNacional"))
+user <- getUser(users = c("PRDmexico", "PRI_Nacional", "AccionNacional"))
+user <- lookupUsers(users = c("PRDmexico", "PRI_Nacional", "AccionNacional"))
+user
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	i <- 1#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 100 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+getFollowers_list(conn, list(user), n=100)
+getFollowers_list(conn, user, n=100)
+store_users_db(user, table_name="users")
+getFollowers_list <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	i <- 1#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+library(sna)
+help(package=sna)
+all_users <- load_users_db(table_name = "users")
+all_users
+load_users_db(as.data.frame = FALSE, table_name = "users")
+load_users_db(as.data.frame = TRUE, table_name = "users")
+head(d)
+load_users_db
+dim(df)
+user_columns
+3.25/8
+3.25/4/2
+3.25/4
+log2(1)
+1/4*log2(1/4)+3/4*log2(3/4)
+1/4*log2(1/4)+3/4*log2(3/4) / 2
+(1/4*log2(1/4)+3/4*log2(3/4)) / 2
+(1/4*log2(1/4)+3/4*log2(3/4)) / 2 +1
+2/3*log2(2/3)+1/3*log2(1/3)
+(2/3*log2(2/3)+1/3*log2(1/3) )*6/8
+(2/3*log2(2/3)+1/3*log2(1/3) )*6/8 +1
+library(twitteR)#
+library(RMySQL)#
+library(sna)#
+# Auth#
+consumer_key <- "lWASO4X80ZXvoQNuLqy6pvIxT"#
+consumer_secret <- "Y02GuODW95cYQnj35UYA3UkIqc6pKI4xfHgvnJpzf4G1xb9YPI"#
+token <- "44076237-ogvrWcaKoDjco1ADdoF6hP8fH7x9HOUfsjkvdhOcW"#
+token_secret <- "yEPDpZFs4B7LDkx70nwu6x23l8BPzMKcWVGKSK9N107Dc"#
+#
+db_database <- "twitter"#
+db_host <- "localhost"#
+db_user <- "root"#
+db_pass <- ""
+getFollowers_ulist <- function(conn, u_list, n=100) {#
+	len <- length(u_list)#
+	i <- 1#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+getFollowers_list(conn, user, n=5000)
+df <- load_users_db(as.data.frame = FALSE, table_name = "users")
+df <- load_users_db(as.data.frame = TRUE, table_name = "users")
+head(df)
+?dbSendQuery
+?getUser
+getFollowersDB <- function(conn, n=100) {#
+	i <- 1#
+	users <- dbSendQuery(conn, "select id from users")#
+	print(users)#
+#	for(u in ids) {#
+#		fol <- u$getFollowers(n=n)#
+#		store_users_db(fol, table_name="users")#
+#		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+#		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+#		i <- i + 1#
+#		if (i %% 1000 == 0) {#
+#			print(i)#
+#		}#
+#	}#
+}
+getFollowersDB <- function(conn, n=100) {#
+	i <- 1#
+	users <- dbGetQuery(conn, "select id from users")#
+	print(users)#
+#	for(u in ids) {#
+#		fol <- u$getFollowers(n=n)#
+#		store_users_db(fol, table_name="users")#
+#		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+#		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+#		i <- i + 1#
+#		if (i %% 1000 == 0) {#
+#			print(i)#
+#		}#
+#	}#
+}
+getFollowersDB <- function(conn, n=100) {#
+	i <- 1#
+	users <- dbGetQuery(conn, "select screenName from users")#
+	for(u in users) {#
+		user <- getUser(user = u)#
+		print(user)#
+#		fol <- u$getFollowers(n=n)#
+#		store_users_db(fol, table_name="users")#
+#		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+#		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+#		i <- i + 1#
+#		if (i %% 1000 == 0) {#
+#			print(i)#
+#		}#
+#	}#
+}
+getFollowersDB <- function(conn, n=100) {#
+	i <- 1#
+	users <- dbGetQuery(conn, "select screenName from users")#
+	for(u in users) {#
+		user <- getUser(user = u)#
+		print(user)#
+#		fol <- u$getFollowers(n=n)#
+#		store_users_db(fol, table_name="users")#
+#		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+#		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+#		i <- i + 1#
+#		if (i %% 1000 == 0) {#
+#			print(i)#
+#		}#
+	}#
+}
+getFollowersDB <- function(conn, n=100) {#
+	i <- 1#
+	users <- dbGetQuery(conn, "select screenName from users")#
+	for(u in users) {#
+		user <- getUser(user = u)#
+		fol <- user$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=user$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+getFollowersDB <- function(conn, n=100) {#
+	i <- 1#
+	users <- dbGetQuery(conn, "select screenName from users")#
+	for(u in users) {#
+		user <- getUser(user = u)#
+		print(user)#
+		fol <- user$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=user$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+setup_twitter_oauth(consumer_key, consumer_secret, access_token=token, access_secret=token_secret)#
+register_mysql_backend("twitter", "localhost", "root", "")#
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)
+getFollowersDB <- function(conn, n=100) {#
+	i <- 1#
+	users <- dbGetQuery(conn, "select screenName from users")#
+	for(u in users) {#
+		user <- getUser(user = u)#
+		print(user)#
+		#fol <- user$getFollowers(n=n)#
+		#store_users_db(fol, table_name="users")#
+		#f_df <- data.frame(user_id=user$id, follower_id=names(fol))#
+		#dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+getFollowersDB <- function(conn, n=100) {#
+	i <- 1#
+	users <- dbGetQuery(conn, "select screenName from users")#
+	print(users)#
+	for(u in users) {#
+		user <- getUser(user = u)#
+		print(user)#
+		#fol <- user$getFollowers(n=n)#
+		#store_users_db(fol, table_name="users")#
+		#f_df <- data.frame(user_id=user$id, follower_id=names(fol))#
+		#dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+getFollowersDB <- function(conn, n=100) {#
+	i <- 1#
+	users <- dbGetQuery(conn, "select screenName from users")#
+	print(users)#
+	for(u in users) {#
+		print(u)#
+		user <- getUser(user=u)#
+#		print(user)#
+		#fol <- user$getFollowers(n=n)#
+		#store_users_db(fol, table_name="users")#
+		#f_df <- data.frame(user_id=user$id, follower_id=names(fol))#
+		#dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+getFollowersDB <- function(conn, n=100) {#
+	i <- 1#
+	users <- dbGetQuery(conn, "select screenName from users")#
+	for(u in users) {#
+		user <- getUser(user=u)#
+#		print(user)#
+		#fol <- user$getFollowers(n=n)#
+		#store_users_db(fol, table_name="users")#
+		#f_df <- data.frame(user_id=user$id, follower_id=names(fol))#
+		#dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+ceiling(2.3)
+floor(2.3)
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		print(users_db[i_inf, i_sup])#
+		#users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		#print(users)#
+		#for (u in users) {#
+		#	print(u)#
+		#	fol <- u$getFollowers(n=n)#
+			#store_users_db(fol, table_name="users")#
+		#	f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+			#dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+#
+		}#
+	}#
+}
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		print(users_db[i_inf, i_sup])#
+		#users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		#print(users)#
+		#for (u in users) {#
+		#	print(u)#
+		#	fol <- u$getFollowers(n=n)#
+			#store_users_db(fol, table_name="users")#
+		#	f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+			#dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+#
+			#}#
+	}#
+}
+library(twitteR)#
+library(RMySQL)#
+library(sna)#
+# Auth#
+consumer_key <- "lWASO4X80ZXvoQNuLqy6pvIxT"#
+consumer_secret <- "Y02GuODW95cYQnj35UYA3UkIqc6pKI4xfHgvnJpzf4G1xb9YPI"#
+token <- "44076237-ogvrWcaKoDjco1ADdoF6hP8fH7x9HOUfsjkvdhOcW"#
+token_secret <- "yEPDpZFs4B7LDkx70nwu6x23l8BPzMKcWVGKSK9N107Dc"#
+#
+db_database <- "twitter"#
+db_host <- "localhost"#
+db_user <- "root"#
+db_pass <- ""#
+#
+setup_twitter_oauth(consumer_key, consumer_secret, access_token=token, access_secret=token_secret)#
+register_mysql_backend("twitter", "localhost", "root", "")#
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+#
+#################################
+getFollowers_ulist <- function(conn, u_list, n=100) {#
+	i <- 1#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}#
+#
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		print(users_db[i_inf, i_sup])#
+		#users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		#print(users)#
+		#for (u in users) {#
+		#	print(u)#
+		#	fol <- u$getFollowers(n=n)#
+			#store_users_db(fol, table_name="users")#
+		#	f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+			#dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+#
+			#}#
+	}#
+}
+library(twitteR)#
+library(RMySQL)#
+library(sna)#
+# Auth#
+consumer_key <- "lWASO4X80ZXvoQNuLqy6pvIxT"#
+consumer_secret <- "Y02GuODW95cYQnj35UYA3UkIqc6pKI4xfHgvnJpzf4G1xb9YPI"#
+token <- "44076237-ogvrWcaKoDjco1ADdoF6hP8fH7x9HOUfsjkvdhOcW"#
+token_secret <- "yEPDpZFs4B7LDkx70nwu6x23l8BPzMKcWVGKSK9N107Dc"#
+#
+db_database <- "twitter"#
+db_host <- "localhost"#
+db_user <- "root"#
+db_pass <- ""#
+#
+setup_twitter_oauth(consumer_key, consumer_secret, access_token=token, access_secret=token_secret)
+getFollowers_ulist <- function(conn, u_list, n=100) {#
+	i <- 1#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}#
+#
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		print(users_db[i_inf, i_sup])#
+		#users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		#print(users)#
+		#for (u in users) {#
+		#	print(u)#
+		#	fol <- u$getFollowers(n=n)#
+			#store_users_db(fol, table_name="users")#
+		#	f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+			#dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+#
+			#}#
+	}#
+}
+getFollowersDB(n=100, user=db_user, password=db_pass, host=db_host, dbname=db_database)
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	num <- floor(length(users_db)/50)#
+	print(users_db)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		#print(users_db[i_inf, i_sup])#
+		#users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		#print(users)#
+		#for (u in users) {#
+		#	print(u)#
+		#	fol <- u$getFollowers(n=n)#
+			#store_users_db(fol, table_name="users")#
+		#	f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+			#dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+#
+			#}#
+	}#
+}
+library(twitteR)#
+library(RMySQL)#
+library(sna)#
+# Auth#
+consumer_key <- "lWASO4X80ZXvoQNuLqy6pvIxT"#
+consumer_secret <- "Y02GuODW95cYQnj35UYA3UkIqc6pKI4xfHgvnJpzf4G1xb9YPI"#
+token <- "44076237-ogvrWcaKoDjco1ADdoF6hP8fH7x9HOUfsjkvdhOcW"#
+token_secret <- "yEPDpZFs4B7LDkx70nwu6x23l8BPzMKcWVGKSK9N107Dc"#
+#
+db_database <- "twitter"#
+db_host <- "localhost"#
+db_user <- "root"#
+db_pass <- ""#
+#
+setup_twitter_oauth(consumer_key, consumer_secret, access_token=token, access_secret=token_secret)#
+register_mysql_backend("twitter", "localhost", "root", "")#
+#################################
+getFollowers_ulist <- function(conn, u_list, n=100) {#
+	i <- 1#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+#
+		for (u in users) {#
+			fol <- u$getFollowers(n=n)#
+			store_users_db(fol, table_name="users")#
+			f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+			dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		}#
+		print(i_sup)	#
+	}	#
+}
+dbDisconnect(conn)
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	num <- floor(length(users_db)/50)#
+	print(num)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+#
+		for (u in users) {#
+			fol <- u$getFollowers(n=n)#
+			store_users_db(fol, table_name="users")#
+			f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+			dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		}#
+		print(i_sup)	#
+	}	#
+}
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	print(users_db)#
+	num <- floor(length(users_db)/50)#
+	print(num)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+#
+		for (u in users) {#
+			fol <- u$getFollowers(n=n)#
+			store_users_db(fol, table_name="users")#
+			f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+			dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		}#
+		print(i_sup)	#
+	}	#
+}
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+#
+		for (u in users) {#
+			fol <- u$getFollowers(n=n)#
+			store_users_db(fol, table_name="users")#
+			f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+			dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		}#
+		print(i_sup)	#
+	}	#
+}
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		print(users)#
+		for (u in users) {#
+			fol <- u$getFollowers(n=n)#
+			store_users_db(fol, table_name="users")#
+			f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+			dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		}#
+		print(i_sup)	#
+	}	#
+}#
+#
+#################################
+#user <- lookupUsers(user="LLANTODESANGRE")#
+#user <- lookupUsers(users = c("PRDmexico", "PRI_Nacional", "AccionNacional"))#
+#userT <- userTimeline("PRDmexico", n=100, includeRts = TRUE)#
+#
+#store_tweets_db(userT, table_name="tweets")#
+#store_users_db(follow, table_name="users")#
+#store_users_db(user, table_name="users")#
+##
+#conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+# getFollowers_ulist(conn, user, n=5000)#
+#
+##
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+getFollowersDB(conn)#
+dbDisconnect(conn)
+users <- getUser(user="000Lauura")
+fol
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			fol <- u$getFollowers(n=n)#
+			store_users_db(fol, table_name="users")#
+			f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+			dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		}#
+		print(i_sup)	#
+	}	#
+}
+users <- getUser(user="007f04043c06440")
+users <- getUser(user="013Racso")
+fol <- users$getFollowers(n=10)
+users
+users$protected
+register_mysql_backend("tw", "localhost", "root", "")
+store_users_db(users, table_name="users")
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			if (!u$protected) {#
+				fol <- u$getFollowers(n=n)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+		print(i_sup)	#
+	}	#
+}
+status$remaining[status$resource=="/account/verify_credentials"]
+as.integre(status$remaining[status$resource=="/account/verify_credentials"])
+as.integer(status$remaining[status$resource=="/account/verify_credentials"])
+Sys.sleep(2)
+testit <- function(x)#
+{#
+    p1 <- proc.time()#
+    Sys.sleep(x)#
+    proc.time() - p1 # The cpu usage should be negligible#
+}
+testit(3.7)
+testit(10)
+?sleep
+pause <- function(x)#
+{#
+    p1 <- proc.time()#
+    Sys.sleep(x)#
+    proc.time() - p1 # The cpu usage should be negligible#
+}#
+pause(3.7)
+pause(10)
+status <- getCurRateLimitInfo()$remaining[status$resource=="/followers/ids"]
+status
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			if (!u$protected) {#
+				while (as.integer(getCurRateLimitInfo()$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+				}#
+				fol <- u$getFollowers(n=n)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+		print(i_sup)	#
+	}	#
+}
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)
+getFollowersDB(conn)
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		while (as.integer(getCurRateLimitInfo()$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			if (!u$protected) {#
+				while (as.integer(getCurRateLimitInfo()$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+				}#
+				fol <- u$getFollowers(n=n)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+		print(i_sup)	#
+	}	#
+}
+getFollowersDB <- function(conn, n=100) {#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		status <- getCurRateLimitInfo()#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+			status <- getCurRateLimitInfo()#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			if (!u$protected) {#
+				status <- getCurRateLimitInfo()#
+				while (as.integer(status$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+					status <- getCurRateLimitInfo()#
+				}#
+				fol <- u$getFollowers(n=n)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+		print(i_sup)	#
+	}	#
+}
+##
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+getFollowersDB(conn)#
+dbDisconnect(conn)
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+getFollowersDB(conn)#
+dbDisconnect(conn)
+nfol=1000
+nuse=100
+query <- paste("select screenName from users order by insert_time asc limit=", nuse)
+query
+getFollowersDB <- function(conn, nuse=100, nfol=1000) {#
+	query <- paste("select screenName from users order by insert_time asc limit=", nuse, sep="")#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		status <- getCurRateLimitInfo()#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+			status <- getCurRateLimitInfo()#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			if (!u$protected) {#
+				status <- getCurRateLimitInfo()#
+				while (as.integer(status$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+					status <- getCurRateLimitInfo()#
+				}#
+				fol <- u$getFollowers(n=nfol)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+		print(i_sup)	#
+	}	#
+}
+getFollowersDB <- function(conn, nuse=100, nfol=1000) {#
+	query <- paste("select screenName from users order by insert_time asc limit=", nuse, sep="")#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		print(i)#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		status <- getCurRateLimitInfo()#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+			status <- getCurRateLimitInfo()#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			if (!u$protected) {#
+				status <- getCurRateLimitInfo()#
+				while (as.integer(status$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+					status <- getCurRateLimitInfo()#
+				}#
+				fol <- u$getFollowers(n=nfol)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+	}	#
+}
+getFollowersDB <- function(conn, nuse=100, nfol=1000) {#
+	query <- paste("select screenName from users order by insert_time asc limit=", nuse, sep="")#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		print(i)#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		status <- getCurRateLimitInfo()#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+			status <- getCurRateLimitInfo()#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			if (!u$protected) {#
+				status <- getCurRateLimitInfo()#
+				while (as.integer(status$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+					status <- getCurRateLimitInfo()#
+				}#
+				fol <- u$getFollowers(n=nfol)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+	}	#
+}
+getCurRateLimitInfo()
+register_mysql_backend("twitter", "localhost", "root", "")
+status <- getCurRateLimitInfo()
+setup_twitter_oauth(consumer_key, consumer_secret, access_token=token, access_secret=token_secret)
+setup_twitter_oauth(consumer_key, consumer_secret, access_token=token, access_secret=token_secret)#
+register_mysql_backend("twitter", "localhost", "root", "")
+library(twitteR)#
+library(RMySQL)#
+library(sna)#
+# Auth#
+consumer_key <- "lWASO4X80ZXvoQNuLqy6pvIxT"#
+consumer_secret <- "Y02GuODW95cYQnj35UYA3UkIqc6pKI4xfHgvnJpzf4G1xb9YPI"#
+token <- "44076237-ogvrWcaKoDjco1ADdoF6hP8fH7x9HOUfsjkvdhOcW"#
+token_secret <- "yEPDpZFs4B7LDkx70nwu6x23l8BPzMKcWVGKSK9N107Dc"#
+#
+db_database <- "twitter"#
+db_host <- "localhost"#
+db_user <- "root"#
+db_pass <- ""#
+#
+setup_twitter_oauth(consumer_key, consumer_secret, access_token=token, access_secret=token_secret)#
+register_mysql_backend("twitter", "localhost", "root", "")
+pause <- function(x)#
+{#
+    p1 <- proc.time()#
+    Sys.sleep(x)#
+    proc.time() - p1 # The cpu usage should be negligible#
+}#
+#
+getFollowers_ulist <- function(conn, u_list, n=100) {#
+	i <- 1#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}#
+#
+getFollowersDB <- function(conn, nuse=100, nfol=1000) {#
+	query <- paste("select screenName from users order by insert_time asc limit=", nuse, sep="")#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		print(i)#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		status <- getCurRateLimitInfo()#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+			status <- getCurRateLimitInfo()#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			if (!u$protected) {#
+				status <- getCurRateLimitInfo()#
+				while (as.integer(status$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+					status <- getCurRateLimitInfo()#
+				}#
+				fol <- u$getFollowers(n=nfol)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+	}	#
+}#
+#################################
+#user <- lookupUsers(user="LLANTODESANGRE")#
+#user <- lookupUsers(users = c("PRDmexico", "PRI_Nacional", "AccionNacional"))#
+#userT <- userTimeline("PRDmexico", n=100, includeRts = TRUE)#
+#
+#store_tweets_db(userT, table_name="tweets")#
+#store_users_db(follow, table_name="users")#
+#store_users_db(user, table_name="users")
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+getFollowersDB(conn, nuse=60)#
+dbDisconnect(conn)
+library(twitteR)#
+library(RMySQL)#
+library(sna)#
+# Auth#
+consumer_key <- "lWASO4X80ZXvoQNuLqy6pvIxT"#
+consumer_secret <- "Y02GuODW95cYQnj35UYA3UkIqc6pKI4xfHgvnJpzf4G1xb9YPI"#
+token <- "44076237-ogvrWcaKoDjco1ADdoF6hP8fH7x9HOUfsjkvdhOcW"#
+token_secret <- "yEPDpZFs4B7LDkx70nwu6x23l8BPzMKcWVGKSK9N107Dc"#
+#
+db_database <- "twitter"#
+db_host <- "localhost"#
+db_user <- "root"#
+db_pass <- ""#
+#
+setup_twitter_oauth(consumer_key, consumer_secret, access_token=token, access_secret=token_secret)#
+register_mysql_backend("twitter", "localhost", "root", "")#
+#################################
+pause <- function(x)#
+{#
+    p1 <- proc.time()#
+    Sys.sleep(x)#
+    proc.time() - p1 # The cpu usage should be negligible#
+}#
+#
+getFollowers_ulist <- function(conn, u_list, n=100) {#
+	i <- 1#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}#
+#
+getFollowersDB <- function(conn, nuse=100, nfol=1000) {#
+	query <- paste("select screenName from users order by insert_time asc limit=", nuse, sep="")#
+	users_db <- dbGetQuery(conn, "select screenName from users")#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		print(i)#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		status <- getCurRateLimitInfo()#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+			status <- getCurRateLimitInfo()#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			if (!u$protected) {#
+				status <- getCurRateLimitInfo()#
+				while (as.integer(status$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+					status <- getCurRateLimitInfo()#
+				}#
+				fol <- u$getFollowers(n=nfol)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+	}	#
+}
+getFollowersDB <- function(conn, nuse=100, nfol=1000) {#
+	query <- paste("select screenName from users order by insert_time asc limit=", nuse, sep="")#
+	users_db <- dbGetQuery(conn, query)#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		print(i)#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		status <- getCurRateLimitInfo()#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+			status <- getCurRateLimitInfo()#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			if (!u$protected) {#
+				status <- getCurRateLimitInfo()#
+				while (as.integer(status$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+					status <- getCurRateLimitInfo()#
+				}#
+				fol <- u$getFollowers(n=nfol)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+	}	#
+}
+pause <- function(x)#
+{#
+    p1 <- proc.time()#
+    Sys.sleep(x)#
+    proc.time() - p1 # The cpu usage should be negligible#
+}#
+#
+getFollowers_ulist <- function(conn, u_list, n=100) {#
+	i <- 1#
+	for(u in u_list) {#
+		fol <- u$getFollowers(n=n)#
+		store_users_db(fol, table_name="users")#
+		f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+		dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+		i <- i + 1#
+		if (i %% 1000 == 0) {#
+			print(i)#
+		}#
+	}#
+}#
+#
+getFollowersDB <- function(conn, nuse=100, nfol=1000) {#
+	query <- paste("select screenName from users order by insert_time asc limit=", nuse, sep="")#
+	users_db <- dbGetQuery(conn, query)#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		print(i)#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		status <- getCurRateLimitInfo()#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+			status <- getCurRateLimitInfo()#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			if (!u$protected) {#
+				status <- getCurRateLimitInfo()#
+				while (as.integer(status$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+					status <- getCurRateLimitInfo()#
+				}#
+				fol <- u$getFollowers(n=nfol)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+	}	#
+}#
+#################################
+#user <- lookupUsers(user="LLANTODESANGRE")#
+#user <- lookupUsers(users = c("PRDmexico", "PRI_Nacional", "AccionNacional"))#
+#userT <- userTimeline("PRDmexico", n=100, includeRts = TRUE)#
+#
+#store_tweets_db(userT, table_name="tweets")#
+#store_users_db(follow, table_name="users")#
+#store_users_db(user, table_name="users")#
+##
+#conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+# getFollowers_ulist(conn, user, n=5000)#
+#
+##
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+getFollowersDB(conn, nuse=60)#
+dbDisconnect(conn)
+getFollowersDB <- function(conn, nuse=100, nfol=1000) {#
+	query <- paste("select screenName from users order by insert_time asc limit=", nuse, sep="")#
+	print(query)#
+	users_db <- dbGetQuery(conn, query)#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		print(i)#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		status <- getCurRateLimitInfo()#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+			status <- getCurRateLimitInfo()#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			if (!u$protected) {#
+				status <- getCurRateLimitInfo()#
+				while (as.integer(status$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+					status <- getCurRateLimitInfo()#
+				}#
+				fol <- u$getFollowers(n=nfol)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+	}	#
+}#
+#################################
+#user <- lookupUsers(user="LLANTODESANGRE")#
+#user <- lookupUsers(users = c("PRDmexico", "PRI_Nacional", "AccionNacional"))#
+#userT <- userTimeline("PRDmexico", n=100, includeRts = TRUE)#
+#
+#store_tweets_db(userT, table_name="tweets")#
+#store_users_db(follow, table_name="users")#
+#store_users_db(user, table_name="users")#
+##
+#conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+# getFollowers_ulist(conn, user, n=5000)#
+#
+##
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+getFollowersDB(conn, nuse=60)#
+dbDisconnect(conn)
+getFollowersDB <- function(conn, nuse=100, nfol=1000) {#
+	query <- paste("select screenName from users order by insert_time asc limit=", nuse, sep="")#
+	print(query)#
+	users_db <- dbGetQuery(conn, query)#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		print(i)#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		status <- getCurRateLimitInfo()#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+			status <- getCurRateLimitInfo()#
+			print(status)#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			if (!u$protected) {#
+				status <- getCurRateLimitInfo()#
+				while (as.integer(status$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+					status <- getCurRateLimitInfo()#
+					print(status)#
+				}#
+				fol <- u$getFollowers(n=nfol)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+	}	#
+}#
+#################################
+#user <- lookupUsers(user="LLANTODESANGRE")#
+#user <- lookupUsers(users = c("PRDmexico", "PRI_Nacional", "AccionNacional"))#
+#userT <- userTimeline("PRDmexico", n=100, includeRts = TRUE)#
+#
+#store_tweets_db(userT, table_name="tweets")#
+#store_users_db(follow, table_name="users")#
+#store_users_db(user, table_name="users")
+getFollowersDB <- function(conn, nuse=100, nfol=1000) {#
+	query <- paste("select screenName from users order by insert_time asc limit", nuse)#
+	print(query)#
+	users_db <- dbGetQuery(conn, query)#
+	users_db <- users_db$screenName#
+	num <- floor(length(users_db)/50)#
+	for (i in 1:num) {#
+		print(i)#
+		i_inf <- (i-1)*50+1#
+		i_sup <- (i*50)#
+		if (i == num) {#
+			i_inf <- (i-1)*50+1#
+			i_sup <- length(users_db)#
+		}#
+		status <- getCurRateLimitInfo()#
+		while (as.integer(status$remaining[status$resource=="/account/verify_credentials"]) == 0) {#
+			pause(10)#
+			status <- getCurRateLimitInfo()#
+			print(status)#
+		}#
+		users <- lookupUsers(users=users_db[i_inf:i_sup])#
+		for (u in users) {#
+			print(u)#
+			if (!u$protected) {#
+				status <- getCurRateLimitInfo()#
+				while (as.integer(status$remaining[status$resource=="/followers/ids"]) == 0) {#
+					pause(10)#
+					status <- getCurRateLimitInfo()#
+					print(status)#
+				}#
+				fol <- u$getFollowers(n=nfol)#
+				store_users_db(fol, table_name="users")#
+				f_df <- data.frame(user_id=u$id, follower_id=names(fol))#
+				dbWriteTable(conn, name="follower", value=f_df, append=TRUE, row.names=FALSE)#
+			}#
+		}#
+	}	#
+}#
+#################################
+#user <- lookupUsers(user="LLANTODESANGRE")#
+#user <- lookupUsers(users = c("PRDmexico", "PRI_Nacional", "AccionNacional"))#
+#userT <- userTimeline("PRDmexico", n=100, includeRts = TRUE)#
+#
+#store_tweets_db(userT, table_name="tweets")#
+#store_users_db(follow, table_name="users")#
+#store_users_db(user, table_name="users")#
+##
+#conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+# getFollowers_ulist(conn, user, n=5000)#
+#
+##
+conn <-  dbConnect(MySQL(), user=db_user, password=db_pass, host=db_host, dbname=db_database)#
+getFollowersDB(conn, nuse=60)#
+dbDisconnect(conn)
+a <- matrix(c(.9, .01, .1,.99), 2)
+.05*.9+.01*.95
+a <- matrix(c(.9, .01, .1,.99), 2, byrow=T)
+a
+a1 <- matrix(c(.7, .3, .3,.7), 2, byrow=T)
+a1
+a %*% c(.05,.95)
+b <- a %*% c(.05,.95)
+b
+a1 %*% b
+(.8^4)*(.2^4)
+A <- matrix(c(1, 0, 0, 0 ,0, 0,  1/3,0,0,1/3,1/3,0, 1/3,0,0,1/3,1/3,0, 0,1/3,1/3,0,0,1/3, ))
+A <- matrix(c(1, 0, 0, 0 ,0, 0,  1/3,0,0,1/3,1/3,0, 1/3,0,0,1/3,1/3,0, 0,1/3,1/3,0,0,1/3, 0,1/3,1/3,0,0,1/3, 0,0,0,1/2,1/2,0))
+A <- matrix(c(1, 0, 0, 0 ,0, 0,  1/3,0,0,1/3,1/3,0, 1/3,0,0,1/3,1/3,0, 0,1/3,1/3,0,0,1/3, 0,1/3,1/3,0,0,1/3, 0,0,0,1/2,1/2,0), 3)
+A <- matrix(c(1, 0, 0, 0 ,0, 0,  1/3,0,0,1/3,1/3,0, 1/3,0,0,1/3,1/3,0, 0,1/3,1/3,0,0,1/3, 0,1/3,1/3,0,0,1/3, 0,0,0,1/2,1/2,0), 6)
+A <- matrix(c(1, 0, 0, 0 ,0, 0,  1/3,0,0,1/3,1/3,0, 1/3,0,0,1/3,1/3,0, 0,1/3,1/3,0,0,1/3, 0,1/3,1/3,0,0,1/3, 0,0,0,1/2,1/2,0), 6, byrow=T)
+A^2
+A^10
+A^100
+A%*%A
+An <- A
+An <- An%*%A
+An
+library(ggplot)
+library(ggplot2)
+P <- matrix(c(.9, .1, 0, 0, .5, .5, .8, 0, .2), 3, by.row=TRUE)
+?matrix
+P <- matrix(c(.9, .1, 0, 0, .5, .5, .8, 0, .2), 3, byrow=TRUE)
+P%^%2
+library(expm)
+P %^% 2
+A <- matrix(c(.2 ,.8, .1, .9), 2, byrow=T)
+A
+A%^%10
+A%^%100
+1/9
+eigen(P)$vectors
+eigen(P)$vectors[1]
+eigen(P)$vectors[[1]]
+?eigen
+eigen(P)$vectors[,1]
+eigen(P)$vectors[,1]/sum(eigen(P)$vectors[,1])
+P %^% 25
+P %*%eigen(P)$vectors[,2]
+P %*%eigen(P)$vectors[,3]
+P %*%eigen(P)$vectors[,1]
+P %^% 10000
+40/69
+24/69
+det(P)
+eigen(P)
+Q <- matrix(c(0.2, -0.5, -0.8, 0, 0.5, -0.8, 1, 1, 1), 3, byrow=T)
+Q
+det(Q)
+?solve
+106/7
+10/106
+2/7-7/106
+560/(7*(106))
+solve(Q, c(0,0,1))
+0.811818*0.480424*0.771212*0.804029
+library(expm)#
+#
+P <- matrix(c(.9, .1, 0, 0, .5, .5, .8, 0, .2), 3, byrow=TRUE)
+P
+P %^% 3
+P %^% 6
+P %^% 12
+P %^% 24
+library(expm)#
+#
+P <- matrix(c(.9, .1, 0, 0, .5, .5, .8, 0, .2), 3, byrow=TRUE)#
+P %^% 3#
+P %^% 6#
+P %^% 12#
+P %^% 24#
+eigen(P)#
+#
+Q <- matrix(c(0.2, -0.5, -0.8, 0, 0.5, -0.8, 1, 1, 1), 3, byrow=T)#
+#
+solve(Q, c(0,0,1))
+library(arules)#
+library(cluster)
+trim <- function( x ) {#
+  gsub("(^[[:space:]]+|[[:space:]]+$)", "", x)#
+}#
+#
+jaccard <- function(x, y) {#
+	length(intersect(x,y)) / length(union(x, y))#
+}#
+#
+file <- readLines("first_elem.txt", n = -1L, ok = TRUE, warn = TRUE)#
+#
+split <- strsplit(file, " | ", fixed=TRUE)#
+split <- lapply(split, function(x) trim(x))#
+#
+sets <- lapply(split, function(x) unlist(strsplit(x[2], ",")) )#
+names(sets) <- unlist(lapply(split, function(x) x[1]))#
+#
+dissim <- data.frame()
+for (el in sets) {#
+	row <- unlist(lapply(sets, function(x) jaccard(el, x)))#
+	dissim <- rbind(dissim, row) #
+}
+?save
+dissim[1:2,1:2]
+names(dissim) <- names(sets)
+?row.names
+n <- dim(dissim)[1]
+n
+dissim <- dissim[1:(n-1),1:(n-1)]
+tail(dissim)
+names(dissim) <- names(sets)#
+row.names(dissim) <- names(sets)#
+save(dissim, file="sim_jaccard.RData")
+names(sets)
+names(dissim) <- names(sets)[1:(n-1)]#
+row.names(dissim) <- names(sets)[1:(n-1)]
+save(dissim, file="sim_jaccard.RData")
+dissim <- as.matrix(dissim)
+dim(dissim)
+dissim <- 1 - dissim
+dissim <- as.dist(dissim)
+head(dissim)
+names(dissim)
+?dist
+dissim$Labels
+labels(dissim)
+clust <- pam(dissim, 2, diss = TRUE, medoids = NULL, cluster.only = FALSE,#
+        do.swap = TRUE, pamonce = FALSE, trace.lev = 0)
+clust <- pam(dissim, 4, diss = TRUE, medoids = NULL, cluster.only = FALSE,#
+        do.swap = TRUE, pamonce = FALSE, trace.lev = 0)
+clust2 <- fanny(dissim, 4, diss = TRUE, memb.exp = 2,#
+          iniMem.p = NULL, cluster.only = FALSE,#
+          maxit = 500, tol = 1e-15, trace.lev = 0)
+clust2 <- fanny(dissim, 4, diss = TRUE, memb.exp = 1,#
+          iniMem.p = NULL, cluster.only = FALSE,#
+          maxit = 500, tol = 1e-15, trace.lev = 0)
+clust2 <- fanny(dissim, 4, diss = TRUE, memb.exp = 1.5,#
+          iniMem.p = NULL, cluster.only = FALSE,#
+          maxit = 500, tol = 1e-15, trace.lev = 0)
+clust2 <- fanny(dissim, 4, diss = TRUE, memb.exp = 1.2,#
+          iniMem.p = NULL, cluster.only = FALSE,#
+          maxit = 500, tol = 1e-15, trace.lev = 0)
+clust2 <- fanny(dissim, 4, diss = TRUE, memb.exp = 1.05,#
+          iniMem.p = NULL, cluster.only = FALSE,#
+          maxit = 500, tol = 1e-15, trace.lev = 0)
+clust2 <- fanny(dissim, 4, diss = TRUE, memb.exp = 1.1,#
+          iniMem.p = NULL, cluster.only = FALSE,#
+          maxit = 500, tol = 1e-15, trace.lev = 0)
+clust2 <- fanny(dissim, 4, diss = TRUE, memb.exp = 1.08,#
+          iniMem.p = NULL, cluster.only = FALSE,#
+          maxit = 500, tol = 1e-15, trace.lev = 0)
+clust2 <- fanny(dissim, 4, diss = TRUE, memb.exp = 1.05,#
+          iniMem.p = NULL, cluster.only = FALSE,#
+          maxit = 750, tol = 1e-15, trace.lev = 0)
+clust2 <- fanny(dissim, 4, diss = TRUE, memb.exp = 1.05,#
+          iniMem.p = NULL, cluster.only = FALSE,#
+          maxit = 1000, tol = 1e-15, trace.lev = 0)
+clust2 <- fanny(dissim, 4, diss = TRUE, memb.exp = 1.06,#
+          iniMem.p = NULL, cluster.only = FALSE,#
+          maxit = 1500, tol = 1e-15, trace.lev = 0)
+clust2 <- fanny(dissim, 4, diss = TRUE, memb.exp = 1.07,#
+          iniMem.p = NULL, cluster.only = FALSE,#
+          maxit = 1500, tol = 1e-15, trace.lev = 0)
+plot(clust2)
+clust <- pam(dissim, 3, diss = TRUE, medoids = NULL, cluster.only = FALSE,#
+        do.swap = TRUE, pamonce = FALSE, trace.lev = 0)
+clust <- pam(dissim, 10, diss = TRUE, medoids = NULL, cluster.only = FALSE,#
+        do.swap = TRUE, pamonce = FALSE, trace.lev = 0)
+plot(clust)
