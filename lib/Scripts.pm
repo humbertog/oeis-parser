@@ -205,9 +205,9 @@ sub createIndividuals {
 #		print FILE"$diffInd";
 #		print FILE "\n</rdf:RDF>";
 #		close(FILE);
-
-
 }
+
+
 
 
 

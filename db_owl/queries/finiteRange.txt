@@ -1,6 +1,11 @@
-PREFIX base: <http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#>
-SELECT ?x 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX uri: <http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#>
+
+SELECT ?x
 WHERE { 
-	?x a base:NonDecreasingSequence.
-	?x a base:NonNegativeSequence.
+	?x rdf:type uri:NonDecreasingSequence.
+	?x rdf:type uri:NonNegativeSequence.
+	?x uri:hasMonotonicity "nonDecreasing".
+	
 }

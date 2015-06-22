@@ -1,0 +1,1902 @@
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FrankEllermann">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Frank Ellermann</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#HenriLifchitz">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Henri Lifchitz</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AlvarIbeas">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Álvar Ibeas</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JacobVecht">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jacob Vecht</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JohannesW.Meijer">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Johannes W. Meijer</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ChristineBessenrodt">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Christine Bessenrodt</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Alessio'BiGAlex'Periloso">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Alessio 'BiGAlex' Periloso</hasName>
+<hasEmail rdf:datatype="&xsd;string">bigalex@bigalex.it</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AhmedFares">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ahmed Fares</hasName>
+<hasEmail rdf:datatype="&xsd;string">ahmedfares@my-deja.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#EmanueleMunarini">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Emanuele Munarini</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#TerenceTao">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Terence Tao</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#VaclavKotesovec">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Vaclav Kotesovec</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DavidW.Wilson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">David W. Wilson</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NevenJuric">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Neven Juric</hasName>
+<hasEmail rdf:datatype="&xsd;string">neven.juric@apis-it.hr</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JohnW.Layman">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">John W. Layman</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#KlausStrassburger">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Klaus Strassburger</hasName>
+<hasEmail rdf:datatype="&xsd;string">strass@ddfi.uni-duesseldorf.de</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MarioVelucchi">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mario Velucchi</hasName>
+<hasEmail rdf:datatype="&xsd;string">mathchess@velucchi.it</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JamesPropp">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">James Propp</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BenoitCloitre">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Benoit Cloitre</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#KlausE.Kastberg">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Klaus E. Kastberg</hasName>
+<hasEmail rdf:datatype="&xsd;string">kastberg@hotkey.net.au</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AndrewWeimholt">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Andrew Weimholt</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RussCox">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Russ Cox</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MartinRenner">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Martin Renner</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PaulZimmermann">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Paul Zimmermann</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#OlivierGA(c)rard">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Olivier Gérard</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ClarkKimberling">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Clark Kimberling</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DougMcKenzie">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Doug McKenzie</hasName>
+<hasEmail rdf:datatype="&xsd;string">mckfam4@aol.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DetlefPauly">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Detlef Pauly</hasName>
+<hasEmail rdf:datatype="&xsd;string">dettodet@yahoo.de</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ArkadiuszWesolowski">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Arkadiusz Wesolowski</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DavidDumas">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">David Dumas</hasName>
+<hasEmail rdf:datatype="&xsd;string">dumas@TCNJ.EDU</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CharlesG.Waldman">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Charles G. Waldman</hasName>
+<hasEmail rdf:datatype="&xsd;string">cgw@alum.mit.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SimonColton">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Simon Colton</hasName>
+<hasEmail rdf:datatype="&xsd;string">simonco@cs.york.ac.uk</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#VladetaJovovic">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Vladeta Jovovic</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MatthewCropper">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Matthew Cropper</hasName>
+<hasEmail rdf:datatype="&xsd;string">mmcrop01@athena.louisville.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AnttiKarttunen">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Antti Karttunen</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MichelLagneau">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Michel Lagneau</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MarcLeBrun">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Marc LeBrun</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DesMacHale">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Des MacHale</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BernardSchott">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Bernard Schott</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GervaisDeroo">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Gervais Deroo</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JamesMitchell">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">James Mitchell</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PhilippeFlajolet">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Philippe Flajolet</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GeraldMcGarvey">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Gerald McGarvey</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MikeOakes">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mike Oakes</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NaohiroNomoto">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Naohiro Nomoto</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#LeroyQuet">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Leroy Quet</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AlexRatushnyak">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Alex Ratushnyak</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#YasutoshiKohmoto">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Yasutoshi Kohmoto</hasName>
+<hasEmail rdf:datatype="&xsd;string">zbi74583@boat.zero.ad.jp</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#HenryGould">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Henry Gould</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ChristianSchroeder">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Christian Schroeder</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#J.H.Conway">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">J. H. Conway</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FrankMJackson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Frank M Jackson</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ZerinvaryLajos">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Zerinvary Lajos</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NikolausMeyberg">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Nikolaus Meyberg</hasName>
+<hasEmail rdf:datatype="&xsd;string">Nikolaus.Meyberg@t-online.de</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RobertMunafo">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Robert Munafo</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#LabosElemer">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Labos Elemer</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JamesA.Sellers">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">James A. Sellers</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GrantGarcia">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Grant Garcia</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AndrewPlewe">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Andrew Plewe</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RajanMurthy">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Rajan Murthy</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CrisMoore">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Cris Moore</hasName>
+<hasEmail rdf:datatype="&xsd;string">moore@santafe.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FredSchneider">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Fred Schneider</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JonnDalton">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jonn Dalton</hasName>
+<hasEmail rdf:datatype="&xsd;string">jdalton@vnet.ibm.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JeffreyShallit">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jeffrey Shallit</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RonKnott">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ron Knott</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AllanWilks">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Allan Wilks</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AnthonyCRobin">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Anthony C Robin</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#UlrichSchimke">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ulrich Schimke</hasName>
+<hasEmail rdf:datatype="&xsd;string">ulrschimke@aol.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DeanHickerson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Dean Hickerson</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Jean-LucChabert">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jean-Luc Chabert</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#R.K.Guy">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">R. K. Guy</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PeterLuschny">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Peter Luschny</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MalinSjodahl">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Malin Sjodahl</hasName>
+<hasEmail rdf:datatype="&xsd;string">malin.sjodahl@physik.uni-karlsruhe.de</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BrunoBerselli">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Bruno Berselli</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AndrewJ.Robbins">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Andrew J. Robbins</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GordonHamilton">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Gordon Hamilton</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#HowardL.Warth">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Howard L. Warth</hasName>
+<hasEmail rdf:datatype="&xsd;string">hlw6c2@umr.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JosephL.Pe">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Joseph L. Pe</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JobstHeitzig">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jobst Heitzig</hasName>
+<hasEmail rdf:datatype="&xsd;string">heitzig@math.uni-hannover.de</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ZakSeidov">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Zak Seidov</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CinoHilliard">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Cino Hilliard</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#LekrajBeedassy">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Lekraj Beedassy</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JeppeStigNielsen">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jeppe Stig Nielsen</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#EugeneMcDonnell">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Eugene McDonnell</hasName>
+<hasEmail rdf:datatype="&xsd;string">eemcd@mac.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BillMcEachen">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Bill McEachen</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JamesA.Raymond">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">James A. Raymond</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#WalterOberschelp">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Walter Oberschelp</hasName>
+<hasEmail rdf:datatype="&xsd;string">oberschelp@informatik.rwth-aachen.de</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#TomRoby">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Tom Roby</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DanDima">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Dan Dima</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RobertG.Wilsonv">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Robert G. Wilson v</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NadiaHeninger">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Nadia Heninger</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AngeleHamel">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Angele Hamel</hasName>
+<hasEmail rdf:datatype="&xsd;string">amh@maths.soton.ac.uk</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PeterFreyd">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Peter Freyd</hasName>
+<hasEmail rdf:datatype="&xsd;string">pjf@saul.cis.upenn.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FabianRothelius">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Fabian Rothelius</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#R.J.Mathar">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">R. J. Mathar</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#TanyaY.Berger-Wolf">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Tanya Y. Berger-Wolf</hasName>
+<hasEmail rdf:datatype="&xsd;string">tanyabw@uiuc.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MatsGranvik">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mats Granvik</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DavidApplegate">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">David Applegate</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FranklinT.Adams-Watters">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Franklin T. Adams-Watters</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DanHoey">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Dan Hoey</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#J.CarlBellinger">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">J. Carl Bellinger</hasName>
+<hasEmail rdf:datatype="&xsd;string">carlb@ctron.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MicheleDondi">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Michele Dondi</hasName>
+<hasEmail rdf:datatype="&xsd;string">bik.mido@tiscalinet.it</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CharlieMarion">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Charlie Marion</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#KyleStern">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Kyle Stern</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#HalSampson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Hal Sampson</hasName>
+<hasEmail rdf:datatype="&xsd;string">hals@easynet.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MikhailGaichenkov">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mikhail Gaichenkov</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#WarrenP.Johnson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Warren P. Johnson</hasName>
+<hasEmail rdf:datatype="&xsd;string">wjohnson@bates.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ThomasWieder">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Thomas Wieder</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GiovanniTeofilatto">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Giovanni Teofilatto</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DmitryKamenetsky">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Dmitry Kamenetsky</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DonaldMintz">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Donald Mintz</hasName>
+<hasEmail rdf:datatype="&xsd;string">djmintz@home.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AloisP.Heinz">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Alois P. Heinz</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#C.Christofferson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">C. Christofferson</hasName>
+<hasEmail rdf:datatype="&xsd;string">Magpie56@aol.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JudsonD.Neer">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Judson D. Neer</hasName>
+<hasEmail rdf:datatype="&xsd;string">judson@poboxes.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AlfordArnold">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Alford Arnold</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MarjorieBicknell-Johnson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Marjorie Bicknell-Johnson</hasName>
+<hasEmail rdf:datatype="&xsd;string">marjohnson@earthlink.net</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ColinMallows">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Colin Mallows</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BarryBrent">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Barry Brent</hasName>
+<hasEmail rdf:datatype="&xsd;string">barryb@primenet.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DeepanMajmudar">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Deepan Majmudar</hasName>
+<hasEmail rdf:datatype="&xsd;string">dmajmuda@esq.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#YongKong">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Yong Kong</hasName>
+<hasEmail rdf:datatype="&xsd;string">ykong@curagen.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#KarolA.Penson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Karol A. Penson</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Juri-StepanGerasimov">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Juri-Stepan Gerasimov</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JayPantone">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jay Pantone</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AlBlack">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Al Black</hasName>
+<hasEmail rdf:datatype="&xsd;string">gblack@nol.net</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MiraBernstein">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mira Bernstein</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RalfStephan">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ralf Stephan</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#W.EdwinClark">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">W. Edwin Clark</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#T.D.Noe">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">T. D. Noe</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RuediSuter">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ruedi Suter</hasName>
+<hasEmail rdf:datatype="&xsd;string">suter@math.ethz.ch</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JeroenF.J.Laros">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jeroen F.J. Laros</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RogerL.Bagula">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Roger L. Bagula</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JoergArndt">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Joerg Arndt</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BjornPoonen">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Bjorn Poonen</hasName>
+<hasEmail rdf:datatype="&xsd;string">poonen@math.princeton.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RA(c)miEismann">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Rémi Eismann</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StanislavSykora">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Stanislav Sykora</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#J.W.Helkenberg">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">J. W. Helkenberg</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AbdallahRayhan">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Abdallah Rayhan</hasName>
+<hasEmail rdf:datatype="&xsd;string">rayhan@engr.uvic.ca</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RobinTrew">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Robin Trew</hasName>
+<hasEmail rdf:datatype="&xsd;string">trew@hcs.harvard.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NoamD.Elkies">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Noam D. Elkies</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MeenakshiSrikanth">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Meenakshi Srikanth</hasName>
+<hasEmail rdf:datatype="&xsd;string">menakan_s@yahoo.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#WolfdieterLang">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Wolfdieter Lang</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MichaelMinic">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Michael Minic</hasName>
+<hasEmail rdf:datatype="&xsd;string">minic@mtsu.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#followingasuggestionfromRobMiller">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> following a suggestion from Rob Miller</hasName>
+<hasEmail rdf:datatype="&xsd;string">rmiller@AmtechSoftware.net</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BennettBattaile">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Bennett Battaile</hasName>
+<hasEmail rdf:datatype="&xsd;string">bennett.battaile@autodesk.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#WarrenD.Smith">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Warren D. Smith</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AntreasP.Hatzipolakis">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Antreas P. Hatzipolakis</hasName>
+<hasEmail rdf:datatype="&xsd;string">xpolakis@otenet.gr</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RaphieFrank">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Raphie Frank</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FloorvanLamoen">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Floor van Lamoen</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BarryE.Williams">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Barry E. Williams</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MartinKlazar">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Martin Klazar</hasName>
+<hasEmail rdf:datatype="&xsd;string">klazar@kam.mff.cuni.cz</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#VladimirBaltic">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Vladimir Baltic</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MohammadK.Azarian">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mohammad K. Azarian</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BorisPutievskiy">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Boris Putievskiy</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DarkoMarinov">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Darko Marinov</hasName>
+<hasEmail rdf:datatype="&xsd;string">marinov@lcs.mit.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RobertLozyniak">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Robert Lozyniak</hasName>
+<hasEmail rdf:datatype="&xsd;string">11@onna.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RossLaHaye">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ross La Haye</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ThomasWard">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Thomas Ward</hasName>
+<hasEmail rdf:datatype="&xsd;string">t.ward@uea.ac.uk</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#UriLevy">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Uri Levy</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JonathanSondow">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jonathan Sondow</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#TanyaKhovanova">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Tanya Khovanova</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DavidG.Williams">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">David G. Williams</hasName>
+<hasEmail rdf:datatype="&xsd;string">davwill24@aol.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#TomEdgar">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Tom Edgar</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JontAllen">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jont Allen</hasName>
+<hasEmail rdf:datatype="&xsd;string">jba@research.att.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SharonSela">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Sharon Sela</hasName>
+<hasEmail rdf:datatype="&xsd;string">sharonsela@hotmail.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#HenryBottomley">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Henry Bottomley</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BrendanMcKay">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Brendan McKay</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#IgnacioLarrosaCaA+-estro">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ignacio Larrosa Cañestro</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AlexFink">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Alex Fink</hasName>
+<hasEmail rdf:datatype="&xsd;string">fink@cadvision.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#VladimirShevelev">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Vladimir Shevelev</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#R.H.Hardin">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">R. H. Hardin</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MirceaMerca">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mircea Merca</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#KaramanosKonstantinos">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Karamanos Konstantinos</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Samuel">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Samuel</hasName>
+<hasEmail rdf:datatype="&xsd;string">somakanjuola@unilorin.edu.ng</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DanailBonchev">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Danail Bonchev</hasName>
+<hasEmail rdf:datatype="&xsd;string">bonchevd@aol.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GaryW.Adamson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Gary W. Adamson</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DouglasStones">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Douglas Stones</hasName>
+<hasEmail rdf:datatype="&xsd;string">dssto1@student.monash.edu.au</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#LeeD.Killough">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Lee D. Killough</hasName>
+<hasEmail rdf:datatype="&xsd;string">killough@wagner.convex.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RickL.Shepherd">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Rick L. Shepherd</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JonathanVosPost">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jonathan Vos Post</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#erGrasser">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">er Grasser</hasName>
+<hasEmail rdf:datatype="&xsd;string">pyropunk@usa.net</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DonKnuth">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Don Knuth</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AltregoJaneway">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Altrego Janeway</hasName>
+<hasEmail rdf:datatype="&xsd;string">altrego99@gmail.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DavidBroadhurst">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">David Broadhurst</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NoamKatz">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Noam Katz</hasName>
+<hasEmail rdf:datatype="&xsd;string">noamkj@hotmail.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#TimHoneywill">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Tim Honeywill</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#VolkerSchmitt">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Volker Schmitt</hasName>
+<hasEmail rdf:datatype="&xsd;string">clamsi@gmx.net</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#TonyBartoletti">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Tony Bartoletti</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#VasiliyDanilov">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Vasiliy Danilov</hasName>
+<hasEmail rdf:datatype="&xsd;string">danilovv@usa.net</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StephenG.Penrice">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Stephen G. Penrice</hasName>
+<hasEmail rdf:datatype="&xsd;string">spenrice@ets.org</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ThomasOrdowski">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Thomas Ordowski</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JeremyJohnson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jeremy Johnson</hasName>
+<hasEmail rdf:datatype="&xsd;string">jjohnson@cs.drexel.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RichardStanley">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Richard Stanley</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Jean-FranASSoisAlcover">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jean-François Alcover</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AlbertD.Rich">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Albert D. Rich</hasName>
+<hasEmail rdf:datatype="&xsd;string">Albert_Rich@msn.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ArturJasinski">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Artur Jasinski</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JudMcCranie">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jud McCranie</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JonWild">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jon Wild</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JeremyMartin">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jeremy Martin</hasName>
+<hasEmail rdf:datatype="&xsd;string">martin@math.umn.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PhilippeDelA(c)ham">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Philippe Deléham</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DouglasE.Iannucci">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Douglas E. Iannucci</hasName>
+<hasEmail rdf:datatype="&xsd;string">diannuc@uvi.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JonPerry">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jon Perry</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#T.Forbes">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">T. Forbes</hasName>
+<hasEmail rdf:datatype="&xsd;string">anthony.d.forbes@googlemail.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JasonKimberley">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jason Kimberley</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#LenSmiley">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Len Smiley</hasName>
+<hasEmail rdf:datatype="&xsd;string">smiley@math.uaa.alaska.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AntonioG.Astudillo">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Antonio G. Astudillo</hasName>
+<hasEmail rdf:datatype="&xsd;string">afg_astudillo@hotmail.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#WouterMeeussen">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Wouter Meeussen</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#EmericDeutsch">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Emeric Deutsch</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FeliceRusso">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Felice Russo</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#TilmanPiesk">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Tilman Piesk</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#_ClarkKimberling_;MiklosBona">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">_Clark Kimberling_; Miklos Bona</hasName>
+<hasEmail rdf:datatype="&xsd;string">bona@math.ufl.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JoeKeane">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Joe Keane</hasName>
+<hasEmail rdf:datatype="&xsd;string">jgk@jgk.org</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#LeonidBroukhis">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Leonid Broukhis</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#KeithF.Lynch">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Keith F. Lynch</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#LambertKlasen">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Lambert Klasen</hasName>
+<hasEmail rdf:datatype="&xsd;string">lambert.klasen@gmx.de</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JohnW.Nicholson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">John W. Nicholson</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ToddK.Moon">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Todd K. Moon</hasName>
+<hasEmail rdf:datatype="&xsd;string">Todd.Moon@ece.usu.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SaschaKurz">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Sascha Kurz</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#WilliamRexMarshall">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">William Rex Marshall</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JeffBurch">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jeff Burch</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JasonEarls">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jason Earls</hasName>
+<hasEmail rdf:datatype="&xsd;string">zevi_35711@yahoo.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#LiorManor">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Lior Manor</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MarkDols">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mark Dols</hasName>
+<hasEmail rdf:datatype="&xsd;string">markdols99@yahoo.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DavidStanovsky">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">David Stanovsky</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RobertSulanke">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Robert Sulanke</hasName>
+<hasEmail rdf:datatype="&xsd;string">sulanke@diamond.idbsu.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#HugoPfoertner">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Hugo Pfoertner</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#J.Lowell">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">J. Lowell</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DavidJohnson-Davies">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">David Johnson-Davies</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PeterBala">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Peter Bala</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JulienPeterBenney">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Julien Peter Benney</hasName>
+<hasEmail rdf:datatype="&xsd;string">jpbenney@gmail.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ChristopherHuntGribble">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Christopher Hunt Gribble</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GeorgeYuhasz">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">George Yuhasz</hasName>
+<hasEmail rdf:datatype="&xsd;string">gyuhasz@vt.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MikeZabrocki">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mike Zabrocki</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FrankRuskey">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Frank Ruskey</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MargaretA.Readdy">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Margaret A. Readdy</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#D.Bouchon">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> D. Bouchon</hasName>
+<hasEmail rdf:datatype="&xsd;string">BOUCHON@zeus.univ-poitiers.fr</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AlHakanson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Al Hakanson</hasName>
+<hasEmail rdf:datatype="&xsd;string">hawkuu@excite.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ReinhardZumkeller">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Reinhard Zumkeller</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#F.Chapoton">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">F. Chapoton</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CharlesG.Moore">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Charles G. Moore</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CharlesRGreathouseIV">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Charles R Greathouse IV</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JohnTromp">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">John Tromp</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RichardR.Forberg">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Richard R. Forberg</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FelixWeinstein">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Felix Weinstein</hasName>
+<hasEmail rdf:datatype="&xsd;string">wain@ana.unibe.ch</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JohnLindgren">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">John Lindgren</hasName>
+<hasEmail rdf:datatype="&xsd;string">john.lindgren@Eng.Sun.COM</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GregoryV.Richardson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Gregory V. Richardson</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DouglasWinston">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Douglas Winston</hasName>
+<hasEmail rdf:datatype="&xsd;string">douglas.winston@srupc.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AvikRoy">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Avik Roy</hasName>
+<hasEmail rdf:datatype="&xsd;string">avik_3.1416@yahoo.co.in</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GiorgioBalzarotti">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Giorgio Balzarotti</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PaoloDominici">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Paolo Dominici</hasName>
+<hasEmail rdf:datatype="&xsd;string">pl.dm@libero.it</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#OmarE.Pol">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Omar E. Pol</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JacquesHaubrich">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jacques Haubrich</hasName>
+<hasEmail rdf:datatype="&xsd;string">jhaubrich@freeler.nl</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CreightonDement">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Creighton Dement</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PaulCurtz">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Paul Curtz</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PatrickDemichel">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Patrick Demichel</hasName>
+<hasEmail rdf:datatype="&xsd;string">patrick.demichel@hp.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DanielForgues">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Daniel Forgues</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DennisP.Walsh">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Dennis P. Walsh</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MiklosBona">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Miklos Bona</hasName>
+<hasEmail rdf:datatype="&xsd;string">bona@math.ufl.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#OttavioD'Antona">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ottavio D'Antona</hasName>
+<hasEmail rdf:datatype="&xsd;string">dantona@dsi.unimi.it</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DavidWasserman">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">David Wasserman</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ThomasSchulze">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Thomas Schulze</hasName>
+<hasEmail rdf:datatype="&xsd;string">jazariel@tiscalenet.it</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GeoffreyCritzer">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Geoffrey Critzer</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ChristianG.Bower">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Christian G. Bower</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#WashingtonBomfim">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Washington Bomfim</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ChristopherJ.Smyth">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Christopher J. Smyth</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GaborHetyei">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Gabor Hetyei</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#E.M.Rains">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> E. M. Rains</hasName>
+<hasEmail rdf:datatype="&xsd;string">rains@caltech.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ChristophMayer">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Christoph Mayer</hasName>
+<hasEmail rdf:datatype="&xsd;string">Christoph.Mayer@dlr.de</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GilBroussard">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Gil Broussard</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#OdimarFabeny">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Odimar Fabeny</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AdrianoCaroli">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Adriano Caroli</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CharlesT.Le">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Charles T. Le</hasName>
+<hasEmail rdf:datatype="&xsd;string">charlestle@yahoo.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PaulBarry">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Paul Barry</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#KenTakusagawa">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ken Takusagawa</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#R.C.Read">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">R. C. Read</hasName>
+<hasEmail rdf:datatype="&xsd;string">rcread@math.uwaterloo.ca</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#WarutRoonguthai">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Warut Roonguthai</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#IvanNeretin">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ivan Neretin</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#KenKnowlton">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Ken Knowlton</hasName>
+<hasEmail rdf:datatype="&xsd;string">kcknowlton@aol.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PeterJ.Cameron">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Peter J. Cameron</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CeciliaRossiter">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Cecilia Rossiter</hasName>
+<hasEmail rdf:datatype="&xsd;string">cecilia@noticingnumbers.net</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PaulBoddington">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Paul Boddington</hasName>
+<hasEmail rdf:datatype="&xsd;string">psb@maths.warwick.ac.uk</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ErichFriedman">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Erich Friedman</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PeterJ.C.Moses">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Peter J. C. Moses</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NicoBaken">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Nico Baken</hasName>
+<hasEmail rdf:datatype="&xsd;string">n.h.g.baken@tudelft.nl</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JeremyGardiner">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jeremy Gardiner</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#KivalNgaokrajang">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Kival Ngaokrajang</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BillGosper">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Bill Gosper</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MitchHarris">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mitch Harris</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PaoloP.Lava">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Paolo P. Lava</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#HieronymusFischer">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Hieronymus Fischer</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ValeMurthy">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Vale Murthy</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MAGHRAOUIAbdelkader">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">MAGHRAOUI Abdelkader</hasName>
+<hasEmail rdf:datatype="&xsd;string">maghraoui.faure.recherche.entpe@obelix.entpe.fr</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#N.J.A.Sloane">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">N. J. A. Sloane</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#TomDuff">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Tom Duff</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JonasWallgren">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jonas Wallgren</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MartinJanecke">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Martin Janecke</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CarlBellinger">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Carl Bellinger</hasName>
+<hasEmail rdf:datatype="&xsd;string">carlb@ctron.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JamesEast">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">James East</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FrederickMagata">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Frederick Magata</hasName>
+<hasEmail rdf:datatype="&xsd;string">frederick.magata@uni-muenster.de</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#WaiHaLee">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Wai Ha Lee</hasName>
+<hasEmail rdf:datatype="&xsd;string">Wainson@hotmail.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#RichardEhrenborg">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Richard Ehrenborg</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#WenjinWoan">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Wenjin Woan</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MarioCatalani">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mario Catalani</hasName>
+<hasEmail rdf:datatype="&xsd;string">mario.catalani@unito.it</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#EricAngelini">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Eric Angelini</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AsherAuel">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Asher Auel</hasName>
+<hasEmail rdf:datatype="&xsd;string">asher.auel@reed.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JackBrennen">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jack Brennen</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ManfredGoebel">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Manfred Goebel</hasName>
+<hasEmail rdf:datatype="&xsd;string">goebel@informatik.uni-tuebingen.de</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AdamKertesz">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Adam Kertesz</hasName>
+<hasEmail rdf:datatype="&xsd;string">adamkertesz@worldnet.att.net</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#GiuseppeMelfi">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Giuseppe Melfi</hasName>
+<hasEmail rdf:datatype="&xsd;string">Giuseppe.Melfi@unine.ch</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AsamoahNkwanta">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Asamoah Nkwanta</hasName>
+<hasEmail rdf:datatype="&xsd;string">nkwanta@jewel.morgan.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ParthasarathyNambi">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Parthasarathy Nambi</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JamesA.Record">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">James A. Record</hasName>
+<hasEmail rdf:datatype="&xsd;string">james.record@gmail.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#EnriquePA(c)rezHerrero">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Enrique Pérez Herrero</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#WalterKehowski">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Walter Kehowski</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ArnoldKnopfmacher">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Arnold Knopfmacher</hasName>
+<hasEmail rdf:datatype="&xsd;string">ARNOLDK@gauss.cam.wits.ac.za</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SameenAhmedKhan">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Sameen Ahmed Khan</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AugustineO.Munagi">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Augustine O. Munagi</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AndrA(c)F.LabossiAre">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">André F. Labossière</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MohammedBouayoun">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mohammed Bouayoun</hasName>
+<hasEmail rdf:datatype="&xsd;string">bouyao@wanadoo.fr</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ThierryMoreau">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Thierry Moreau</hasName>
+<hasEmail rdf:datatype="&xsd;string">Thierry.Moreau@connotech.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NikolayV.Kosinov">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Nikolay V. Kosinov</hasName>
+<hasEmail rdf:datatype="&xsd;string">kosinov@unitron.com.ua</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MichaelSomos">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Michael Somos</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MattiasSvanstrom">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Mattias Svanstrom</hasName>
+<hasEmail rdf:datatype="&xsd;string">mattias@isy.liu.se</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ArtemarioTadeuMedeirosdaSilva">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Artemario Tadeu Medeiros da Silva</hasName>
+<hasEmail rdf:datatype="&xsd;string">artemario@uol.com.br</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#EricW.Weisstein">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Eric W. Weisstein</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MichaelA.Childers">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Michael A. Childers</hasName>
+<hasEmail rdf:datatype="&xsd;string">childers_moof@yahoo.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JesperJansson">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jesper Jansson</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#TomVerhoeff">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Tom Verhoeff</hasName>
+<hasEmail rdf:datatype="&xsd;string">Tom.Verhoeff@acm.org</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ChristopherLamChamKee">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Christopher Lam Cham Kee</hasName>
+<hasEmail rdf:datatype="&xsd;string">Topher@CyberDude.Com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NickSinger">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string"> Nick Singer</hasName>
+<hasEmail rdf:datatype="&xsd;string">nsinger@eos.hitc.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#K.S.Bhanu">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">K. S. Bhanu</hasName>
+<hasEmail rdf:datatype="&xsd;string">bhanu_105@yahoo.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AmarnathMurthy">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Amarnath Murthy</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#KlausBrockhaus">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Klaus Brockhaus</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JaroslavKrizek">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Jaroslav Krizek</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#SimonPlouffe">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Simon Plouffe</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MarksR.Nester">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Marks R. Nester</hasName>
+<hasEmail rdf:datatype="&xsd;string">nesterm@dpi.qld.gov.au</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#M.F.Hasler">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">M. F. Hasler</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JosA(c)MarAaGrauRibas">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">José María Grau Ribas</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PaulD.Hanna">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Paul D. Hanna</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PeterHvanderKamp">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Peter H van der Kamp</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DanFux">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Dan Fux</hasName>
+<hasEmail rdf:datatype="&xsd;string">dan.fux@OpenGaia.com or danfux(AT)OpenGaia.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MichaelTaylor">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Michael Taylor</hasName>
+<hasEmail rdf:datatype="&xsd;string">michael.taylor@vf.vodafone.co.uk</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JohannesFischer">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Johannes Fischer</hasName>
+<hasEmail rdf:datatype="&xsd;string">Fischer@informatik.uni-tuebingen.de</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FungLam">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Fung Lam</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#KennethJRamsey">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Kenneth J Ramsey</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#BenBranman">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ben Branman</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#CtiborO.Zizka">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Ctibor O. Zizka</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MartinY.Veillette">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Martin Y. Veillette</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#JoeK.Crump">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Joe K. Crump</hasName>
+<hasEmail rdf:datatype="&xsd;string">joecr@carolina.rr.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MichaelJ.Welch">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Michael J. Welch</hasName>
+<hasEmail rdf:datatype="&xsd;string">mjw1@ntlworld.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#MiklosKristof">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Miklos Kristof</hasName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#AntonSherwood">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Anton Sherwood</hasName>
+<hasEmail rdf:datatype="&xsd;string">bronto@pobox.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#DavidPetry">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">David Petry</hasName>
+<hasEmail rdf:datatype="&xsd;string">petry@accessone.com</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#HermanJamke">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Herman Jamke</hasName>
+<hasEmail rdf:datatype="&xsd;string">hermanjamke@fastmail.fm</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#el">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">el</hasName>
+<hasEmail rdf:datatype="&xsd;string">kw29@evansville.edu</hasEmail>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#PatrickDeGeest">
+<rdf:type rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Author"/>
+<hasName rdf:datatype="&xsd;string">Patrick De Geest</hasName>
+</owl:NamedIndividual>
+

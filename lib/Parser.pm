@@ -84,7 +84,17 @@ sub getFormula {
 	return @ret;
 }
 
-
+sub getAuthor {
+	my $string = shift;
+	# retrieves the id of the sequence that is being parsed to remove it from results
+	my $var = "";
+	$var = $1 if $string =~ /^%A\sA[0-9]{6,8}\s(.*)\n/mg;
+	#$var =~ s/^_//;
+	#$var =~ s/_$/ /;
+	my @ret;
+	push @ret, $var;
+	return @ret;
+}
 
 
 1;
