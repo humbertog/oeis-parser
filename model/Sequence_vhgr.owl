@@ -204,6 +204,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasName">
@@ -407,6 +416,7 @@
         <hasFirstElements rdf:datatype="&xsd;string">0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0</hasFirstElements>
         <hasName rdf:datatype="&xsd;string">The zero sequence</hasName>
         <hasFormula rdf:datatype="&xsd;string">a(n)=0</hasFormula>
+        <hasMonotonicity>const</hasMonotonicity>
     </owl:NamedIndividual>
     
 
@@ -424,12 +434,63 @@
     <swrl:Imp>
         <swrl:body>
             <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:BuiltinAtom>
+                                        <swrl:builtin rdf:resource="&swrlb;contains"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first rdf:resource="urn:swrl#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first>constant</rdf:first>
+                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </swrl:BuiltinAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
                 <rdf:first>
                     <swrl:ClassAtom>
                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
                         <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </swrl:ClassAtom>
                 </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#ConstantSequence"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
                 <rdf:rest>
                     <swrl:AtomList>
                         <rdf:first>
@@ -464,6 +525,12 @@
                         </rdf:rest>
                     </swrl:AtomList>
                 </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
             </swrl:AtomList>
         </swrl:body>
         <swrl:head>
@@ -477,6 +544,234 @@
                 </rdf:first>
             </swrl:AtomList>
         </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasKeywords"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:BuiltinAtom>
+                                        <swrl:builtin rdf:resource="&swrlb;contains"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first rdf:resource="urn:swrl#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first>fini</rdf:first>
+                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </swrl:BuiltinAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRangeSequence"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:BuiltinAtom>
+                                        <swrl:builtin rdf:resource="&swrlb;contains"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first rdf:resource="urn:swrl#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first>nonincreasing</rdf:first>
+                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </swrl:BuiltinAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonIncreasingSequence"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:BuiltinAtom>
+                                        <swrl:builtin rdf:resource="&swrlb;contains"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first rdf:resource="urn:swrl#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first>decreasing</rdf:first>
+                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </swrl:BuiltinAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyDecreasingSequence"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#StrictlyIncreasingSequence"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#Sequence"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:BuiltinAtom>
+                                        <swrl:builtin rdf:resource="&swrlb;contains"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first rdf:resource="urn:swrl#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first>increasing</rdf:first>
+                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </swrl:BuiltinAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
     </swrl:Imp>
     <swrl:Imp>
         <swrl:head>
@@ -559,7 +854,7 @@
                                                 <rdf:rest>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="&rdf;List"/>
-                                                        <rdf:first>fini</rdf:first>
+                                                        <rdf:first>nondecreasing</rdf:first>
                                                         <rdf:rest rdf:resource="&rdf;nil"/>
                                                     </rdf:Description>
                                                 </rdf:rest>
@@ -571,7 +866,7 @@
                         </rdf:rest>
                         <rdf:first>
                             <swrl:DatavaluedPropertyAtom>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasKeywords"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#hasMonotonicity"/>
                                 <swrl:argument1 rdf:resource="urn:swrl#x"/>
                                 <swrl:argument2 rdf:resource="urn:swrl#y"/>
                             </swrl:DatavaluedPropertyAtom>
@@ -585,7 +880,7 @@
                 <rdf:rest rdf:resource="&rdf;nil"/>
                 <rdf:first>
                     <swrl:ClassAtom>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#FiniteRangeSequence"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#NonDecreasingSequence"/>
                         <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </swrl:ClassAtom>
                 </rdf:first>
