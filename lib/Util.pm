@@ -553,6 +553,59 @@ sub xml_special_char {
 }
 
 
+sub ComputeLambekMoserInverseDirect{
+	
+	my ($array_ref1) = @_;
+	my @requestSeq = @{$array_ref1};
+	#my @requestSeq=(0,2,6,12,20,30);
+	
+	my @LamberkMoserTh=();
+	my @intArray;
+	my $count=0;
+	my $maxElemReq=$requestSeq[$#requestSeq];
+
+	for (my $i=1; $i <= $#requestSeq+1; $i++)
+	{
+		push @intArray,$i;
+		#print "$i\n";
+		$count = 0;
+		for (my $j=0; $j <= $#requestSeq; $j++)
+		{
+				if($requestSeq[$j]<$i)
+				{	#print("Inside IF\n");
+					$count=$count+1;
+					
+				}
+			
+		}
+		#print ("$i,$requestSeq[$i-1],$count,$maxElemReq \n");
+		if($i-1<$maxElemReq)
+		{ 
+			my $temp=$i-1;
+			#print ("$temp,$maxElemReq,COunt:$count \n");		
+			push @LamberkMoserTh,$count;			
+		}
+	}	
+		return @LamberkMoserTh;
+	}
+
+
+##compute F(n)-n and G(n)-n of complements
+sub computeParalellLambekSeq{			
+	my @seq=@_;
+	my @seqPara;
+	
+	my $j;
+	my $new;
+	for (my $i=0; $i < $#seq+1; $i++)
+		{
+			$j=$i+1;
+			$new=$seq[$i]-$j;
+			#print("\nj: $j  Value: $seq[$i] New:$new ");
+			push @seqPara,$new;
+		}
+	return @seqPara;
+}
 
 
 
