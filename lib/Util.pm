@@ -240,6 +240,7 @@ sub computeComplement{
 	my $seq = shift;
 	my @seqFirstElem = Parser::parseSequence($seq, \&Parser::getFirstElements);
 	my $maxElem=max @seqFirstElem;
+	#print  "\nInt:$maxElem\n";
 	#create Integer array of  len of Seq
 	my @intArray;
 	for (my $i=1; $i <= $maxElem; $i++)
@@ -317,13 +318,13 @@ sub findComplementSeqIDfromFile{
 
 #returns HashMap
 sub createFirstEmlemtDataStr{
+	my $infile = shift;
 	
 	my @seq;
 	my @seqFirseElemLen;
 	
 	#my $infile = "./db/all.txt";
-	my $infile = shift;
-
+	
 	@seq=readFileLinebyLineInArray($infile);
 	my %seqHasMap;
 	my @seqFirstElem;
@@ -354,8 +355,162 @@ sub createFirstEmlemtDataStr{
 
 
 
+
+# Example
+	# my @array1=(1, 1, 2, 3, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 9, 10, 11, 11, 12, 12, 13, 14, 14, 15, 16);
+        # my @array2=(1, 1, 2, 3, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 9, 10, 11, 11, 12, 12, 13, 14, 14, 15, 16);
+        # "Perfect Match"
+        
+        # my @array1=(1, 1, 2, 3, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 9, 10, 11, 11, 12, 12, 13, 14, 14, 15, 16);
+        # my @array2=(0, 1, 1, 2, 3, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 9, 10, 11, 11, 12, 12, 13, 14, 14, 15, 16);        
+	# "Match by ignorning the 1st zero of Array 2";
+
+        # my @array1=(0, 1, 1, 2, 3, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 9, 10, 11, 11, 12, 12, 13, 14, 14, 15, 16);
+        # my @array2=(1, 1, 2, 3, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 9, 10, 11, 11, 12, 12, 13, 14, 14, 15, 16);        
+	# "Match by ignorning the 1st zero of Array 1";
+	
+	# my @array1=(1, 1, 2, 3, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 9);
+        # my @array2=(1, 1, 2, 3, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 9, 10, 11, 12, 12, 13, 14, 14, 15, 16);        
+	# "No Match";
+	
+       
+#Access
+	# my $flag=Util::areArraysEqual(\@array1, \@array2);
+	# print ("\nFlag:$flag\n");
+
+	
+sub areArraysEqual{
+        my ($array_ref1, $array_ref2) = @_;
+	my @array1 = @{$array_ref1};
+	my @array2 = @{$array_ref2};
+	#print("\n\narray1:@array1 \narray2:@array2");
+
+	my $array1Size=$#array1;	
+	my $array2Size=$#array2;
+	my @array1Resize=();
+	my @array2Resize=();
+	
+	
+	my $flag="No Match";	
+
+	    #print @array2;
+		if($#array2<=$array1Size)
+		{
+			#print("IF :\narray2: $#array2<=array1Size: $array1Size");
+			@array1Resize=();
+			for (my $i=0; $i <=$#array2; $i++)
+				{
+					push @array1Resize,$array1[$i];
+				}	
+				#@array2Resize=();
+				@array2Resize=@array2;
+		}
+		else{
+			#print("Else: \narray2: $#array2 <= array1Size: $array1Size");       	
+			@array2Resize=();
+			#print("\n\nOutside Loop array2Resize: @array2Resize  end\n");
+
+			for (my $i=0; $i <=$array1Size; $i++)
+				{
+					push @array2Resize,$array2[$i];
+				}	
+					#print("\n\nWithin Loop: array2: @array2    END");
+
+					#print("\n\nWithin Loop: array2Resize: @array2Resize  END");
+				#@array1Resize=();
+				@array1Resize=@array1;
+		}
+	
+		
+	       my $count=0; 
+	       #print("\n\narray1Resize:@array1Resize \narray2Resize:@array2Resize");
+			if (@array1Resize ~~ @array2Resize && $#array2Resize>=7 )
+			{
+				$flag="Perfect Match";
+				#print"\n$flag\n";
+					
+			}
+			else
+			{
+				if($array2Resize[0]==0 )
+				{
+					#print ("ifarray2Resize");
+					for (my $iTh=0; $iTh <=$#array1Resize-1; $iTh++)
+					{
+						for (my $iFi=1; $iFi <=$#array1Resize; $iFi++)
+						{
+							my $diffInIndex=$iFi-$iTh;
+							if ($array1Resize[$iTh]==$array2Resize[$iFi] and $diffInIndex==1)
+							{
+								#print("\n $array1Resize[$iTh] == $array2Resize[$iFi]");
+								$count++;
+								}
+						}
+					}
+					#print ("\ncount: $count   array1Resize:$#array1Resize");	
+					
+					if($count==$#array1Resize && $count>=7)
+					{
+						$flag="Match by ignorning the 1st zero of Array 2";
+						#print"\n$flag\n";
+						
+					}     
+				}
+				elsif($array1Resize[0]==0){
+					#print ("ifarray1Resize");
+
+					#print("\narray1Resize:@array1Resize");
+					#print("\narray2Resize:@array2Resize");
+					
+					
+					for (my $iFi=0; $iFi <=$#array1Resize-1; $iFi++)
+						
+					{
+						for (my $iTh=1; $iTh <=$#array1Resize; $iTh++)
+						{
+							my $diffInIndex=$iTh-$iFi;
+							#print("\n $array1Resize[$iTh] == $array2Resize[$iFi]");
+							if ($array1Resize[$iTh]==$array2Resize[$iFi] and $diffInIndex==1)
+							{
+								#print("\n $array1Resize[$iTh] == $array2Resize[$iFi]");
+								$count++;
+							}
+						}
+					}
+					#print ("\ncount: $count   array1Resize:$#array1Resize");	
+					
+					if($count==$#array2Resize && $count>=7)
+					{
+						$flag="Match by ignorning the 1st zero of Array 1";
+						#print"\n$flag\n";
+						
+						
+					}
+				}
+						
+				else{
+					$flag="No Match";
+					#print"\n$flag\n";
+				     }
+			}
+
+		   
+	return $flag;
+
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 #Reads file line by line and puts in an array.
-sub readFileLinebyLineInArray()
+sub readFileLinebyLineInArray
 {
 	
 	my $infile = shift;

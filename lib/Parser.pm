@@ -5,7 +5,7 @@ use Util;
 sub parseSequence {
 	# @args = ($filename, parser_ref1, parser_ref2, ...)
 	my ($filename, $parser) = @_;
-	open FILE, $filename or die "Couldn't open file: $!"; 
+	open FILE, $filename or die "Couldn't open file: $filename $!"; 
 	my $content_string = "";
 	while (<FILE>){
 		$content_string .= $_;
