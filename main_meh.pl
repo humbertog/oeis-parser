@@ -11,7 +11,6 @@ use List::Util qw( min max );
 use 5.010;
 
 
-
 #Subroutine to find IDs of all core sequences and write them to file named core.txt
 #Util::createCoreSeqFile();
 
@@ -31,140 +30,102 @@ use 5.010;
 
 
 #MAIN
-my $infile = "./db/compool.txt";
-ComputeLambekMoserInverse($infile);
-sub ComputeLambekMoserInverse{
-	my $infile =  shift;
-	my @secCompPairArrayOf2;
-	@secCompPairArrayOf2=createSequenceComplementPairFile($infile);
 
-	#print @secCompPairArrayOf2;
 
-	#print("\n\n");
-	my $leftCompl; #IDs
-	my $rightCompl;
 
-	my @leftComplSeq; #Sequence arrays
-	my @rightComplSeq;
-	my @leftComplSeqLamberk; #Sequence arrays Lamberk
-	my @rightComplSeqLamberk;
-	my @arrayOfPossibleSeqLeftLam;
-	my @arrayOfPossibleSeqRightLam;
 
-	my $seqPath;
-	for (my $i=0; $i <= $#secCompPairArrayOf2; $i++)
-	{
-		#print("$secCompPairArrayOf2[$i]\n");
-		my @values = split(',', $secCompPairArrayOf2[$i]);
-		$leftCompl=$values[0];
-		$rightCompl=$values[1];
+#MAIN
+# my @requestSeq=(1,1,2,2,2,2);
+# #my @requestSeq=(0,2,6,12,20,30);
+# my @LamberkMoserTh=ComputeLambekMoserInverseDirect(\@requestSeq);
+# print "\n @requestSeq \n @LamberkMoserTh\n";
+
+
+
+
+
+
+	# my $infile = "./db/compool.txt";
+	# my @arrayOfAllSeqIDs=readFileLinebyLineInArray($infile);
+	
+	# my @secLMPairArray;
+	# my $secLMPairString;
+	
+	# my @secLMPairArrayOf2;
+	# my $secLMPairStringOf2;
+	 
+	
+	
+	# for (my $i=0; $i <=$#arrayOfAllSeqIDs; $i++)
+	# {
+		# my $seq="./db/sequences/$arrayOfAllSeqIDs[$i].txt";
+		# print("\nseq:$seq ___________________________________");
 		
-		print("\n$leftCompl,$rightCompl");		$seqPath="./db/sequences/$leftCompl.txt";
-		@leftComplSeq = Parser::parseSequence($seqPath, \&Parser::getFirstElements);
+		 # my @seqFirstElem = Parser::parseSequence($seq, \&Parser::getFirstElements);
+			# print "\nLen of Seq: $#seqFirstElem\n";
+			# print "S1 Seq: @seqFirstElem\n\n";
 
-		$seqPath="./db/sequences/$rightCompl.txt";
-		@rightComplSeq = Parser::parseSequence($seqPath, \&Parser::getFirstElements);
-
-		print("\nleftComplSeq:@leftComplSeq");		print("\nrightComplSeq:@rightComplSeq \n");
 			
-		@leftComplSeqLamberk=computeParalellLambekSeq(@leftComplSeq);			@rightComplSeqLamberk=computeParalellLambekSeq(@rightComplSeq);	
+			# my @seqLM=ComputeLambekMoserInverseDirect(\@seqFirstElem);
+			# print "\nLen of Seq seqLM: $#seqLM\n";
+			# print "S1 Seq LM: @seqLM\n\n";
 
-		print("\nleftComplSeq Lamberk:@leftComplSeqLamberk");
-		print("\nrightComplSeq Lamberk:@rightComplSeqLamberk \n");
-		
-		@arrayOfPossibleSeqLeftLam=&findComplementSeqIDfromHashMap(@leftComplSeqLamberk);
-		print ("\narrayOfPossibleSeqLeftLam: @arrayOfPossibleSeqLeftLam\n");		@arrayOfPossibleSeqRightLam=&findComplementSeqIDfromHashMap(@rightComplSeqLamberk);
-		print ("\narrayOfPossibleSeqRightLam: @arrayOfPossibleSeqRightLam\n");
-	}
-}
-# my @seqComp=(1,3,4,6,8,9,11);
+	# }
+
+
+
+
+
+
+# my @seqComp=(1,3,4,6,8,9,11);
 # my @seqPar;
 # print @seqComp;
-# print "\n";# @seqPar=&computeParalellLambekSeq(@seqComp);
-# print "\n";# print @seqPar;
-##compute F(n)-n and G(n)-n of complements
-sub computeParalellLambekSeq{			
-	my @seq=@_;
-	my @seqPara;
-my $j;
-my $new;
-	for (my $i=0; $i < $#seq+1; $i++)
-		{
-			$j=$i+1;
-			$new=$seq[$i]-$j;
-			#print("\nj: $j  Value: $seq[$i] New:$new ");
-			push @seqPara,$new;
-		}
-	return @seqPara;
-}
+# print "\n";
+# @seqPar=&computeParalellLambekSeq(@seqComp);
+# print "\n";
+# print @seqPar;
 
 
+##my $infile = "./db/compool.txt";
+#my $infile = "./db/nonn_nondecreasing1.txt";
+##my @temp=createSequenceComplementPairFile($infile);
 
-
-sub createSequenceComplementPairFile{
-	#my $infile = "./db/compool.txt";
-	my $infile =  shift;
-	my @arrayOfAllSeqIDs=readFileLinebyLineInArray($infile);
-	#print  ("\narrayOfAllSeqIDs:@arrayOfAllSeqIDs");
-	my @secCompPairArray;
-	my $secCompPairString;
-	
-	my @secCompPairArrayOf2;
-	my $secCompPairStringOf2;
-	 
-	for (my $i=0; $i <=$#arrayOfAllSeqIDs; $i++)
-	{
-		my $seq="./db/sequences/$arrayOfAllSeqIDs[$i].txt";
-		#print("\nseq:$seq ___________________________________");
-		my @seqComp=Util::computeComplement($seq);
-		#print "\nLen of Comp: $#seqComp\n";
-		#print "S1 Comp:@seqComp\n\n";
-		my @arrayOfPossibleSeq=&findComplementSeqIDfromHashMap(@seqComp);
-		
-		if (@arrayOfPossibleSeq)
-		{			
-			for (my $j=0; $j <=$#arrayOfPossibleSeq; $j++)
-			{
-				$secCompPairStringOf2="$arrayOfAllSeqIDs[$i],$arrayOfPossibleSeq[$j]";
-				push @secCompPairArrayOf2,$secCompPairStringOf2;
-			}
-		}				if (!@arrayOfPossibleSeq)
-		{
-			@arrayOfPossibleSeq=("NA");
-		}
-		$secCompPairString="$arrayOfAllSeqIDs[$i] -> @arrayOfPossibleSeq\n";		
-		push @secCompPairArray,$secCompPairString;
-		
-	}
-
-	#print @secCompPairArray;
-
-	# #One by one
-	# my @seqComp=Util::computeComplement("./db/sequences/A005206.txt");
-	# my @arrayOfPossibleSeq=&findComplementSeqIDfromHashMap(@seqComp);
-	# print "\n\nSequence: A005206 Compl Seq ID:@arrayOfPossibleSeq\n\n";
-
-	open (FILE, "> ./db/SeqCompPair.txt") or die "problem opening ./db/core.txt\n";
-		foreach (@secCompPairArray) {
-			print FILE $_;
-		}
-		close(FILE);
-		
-	return @secCompPairArrayOf2;
-}
-
-
-#
 
 
 #my %seqHasMap=Util::createFirstEmlemtDataStr("./db/compool.txt");   #"./db/all.txt"
+
+	
+#Access
+
+	# my @array1=(0, 1, 1, 2, 3, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9);
+        # my @array2=(1, 1, 2);
+
+	# my $flag=Util::areArraysEqual(\@array1, \@array2);
+	# print ("\nFlag:$flag\n");
+
+
+
+
+
+
+# # # # #One by one
+	 # my @seqComp=(0, 2, 5, 7, 10, 13, 15, 18, 20, 23, 26, 28);
+	 # print @seqComp;
+	# # # #my @seqComp=Util::computeComplement("./db/sequences/A005206.txt");	
+	# my %seqHasMap1=Util::createFirstEmlemtDataStr("./db/compool.txt");   #"./db/all.txt"
+	 # my @arrayOfPossibleSeq=findComplementSeqIDfromHashMap1(\@seqComp, \%seqHasMap1);
+	 # print "\n\n*************************************************************************Sequence:  Compl Seq @arrayOfPossibleSeq\n\n";
+
+
+
+
 
 # given the computed theoretic complement, this function returns the array containing the ids of possible sequences
 sub findComplementSeqIDfromHashMap{
 	my (@seqThComp)=@_;
 	my $seqThCompSize=$#seqThComp;
-	my %seqHasMap=Util::createFirstEmlemtDataStr("./db/compool.txt");   #"./db/all.txt"
-	my @seqFindComp;
+	my %seqHasMap=Util::createFirstEmlemtDataStr("./db/hash.txt");   #"./db/all.txt"
+	##################my @seqFindComp;
 	my $seqFindCompSize;
 	my @seqThCompResize;
 	my @seqFindCompResize=();
@@ -182,12 +143,14 @@ sub findComplementSeqIDfromHashMap{
 	
 	foreach my $group (keys %seqHasMap) 
 	{
-	    #print "\n\nThe members of $group are\n";
+		my @seqFindComp;
+	    print "\n\nThe members of $group are\n";
 	    foreach (@{$seqHasMap{$group}}) 
 	    {
 		@seqFindComp=@{$seqHasMap{$group}};
 		#print "\t$_\n";
 	    }
+	    #print @seqFindComp;
 		if($#seqFindComp<=$seqThCompSize)
 		{
 			#print("IF :\nseqFindComp: $#seqFindComp<=seqThCompSize: $seqThCompSize");
@@ -196,7 +159,7 @@ sub findComplementSeqIDfromHashMap{
 				{
 					push @seqThCompResize,$seqThComp[$i];
 				}	
-				@seqFindCompResize=();
+				#@seqFindCompResize=();
 				@seqFindCompResize=@seqFindComp;
 		}
 		else{
@@ -211,7 +174,7 @@ sub findComplementSeqIDfromHashMap{
 					#print("\n\nWithin Loop: seqFindComp: @seqFindComp    END");
 
 					#print("\n\nWithin Loop: seqFindCompResize: @seqFindCompResize  END");
-				@seqThCompResize=();
+				#@seqThCompResize=();
 				@seqThCompResize=@seqThComp;
 		}
 		#print("\noutside loop");
@@ -235,7 +198,8 @@ sub findComplementSeqIDfromHashMap{
 					{
 						for (my $iFi=1; $iFi <=$#seqThCompResize; $iFi++)
 						{
-							if ($seqThCompResize[$iTh]==$seqFindCompResize[$iFi])
+							my $diffInIndex=$iFi-$iTh;
+							if ($seqThCompResize[$iTh]==$seqFindCompResize[$iFi] and $diffInIndex==1)
 							{
 								#print("\n $seqThCompResize[$iTh] == $seqFindCompResize[$iFi]");
 								$count++;
@@ -251,24 +215,30 @@ sub findComplementSeqIDfromHashMap{
 					}     
 				}
 				elsif($seqThCompResize[0]==0){
+					print("else ___________________________");
+					print("\nseqThCompResize:@seqThCompResize");
+					print("\nseqFindCompResize:@seqFindCompResize");
+					
 					
 					for (my $iFi=0; $iFi <=$#seqThCompResize-1; $iFi++)
 						
 					{
 						for (my $iTh=1; $iTh <=$#seqThCompResize; $iTh++)
 						{
-							if ($seqThCompResize[$iTh]==$seqFindCompResize[$iFi])
+							my $diffInIndex=$iTh-$iFi;
+							#print("\n $seqThCompResize[$iTh] == $seqFindCompResize[$iFi]");
+							if ($seqThCompResize[$iTh]==$seqFindCompResize[$iFi] and $diffInIndex==1)
 							{
-								#print("\n $seqThCompResize[$iTh] == $seqFindCompResize[$iFi]");
+								print("\n $seqThCompResize[$iTh] == $seqFindCompResize[$iFi]");
 								$count++;
-								}
+							}
 						}
 					}
-					#print ("\ncount: $count   seqThCompResize:$#seqThCompResize");	
+					print ("\ncount: $count   seqThCompResize:$#seqThCompResize");	
 					
 					if($count==$#seqFindCompResize && $count>=7)
 					{
-						#print "\n\n$group:Match by ignorning the zero of Theoretic Complement ";
+						print "\n\n$group:Match by ignorning the zero of Theoretic Complement ";
 						push @arrayOfPossibleSeqToReturn,$group;
 					}
 				}
@@ -282,6 +252,69 @@ sub findComplementSeqIDfromHashMap{
 	}
 	return @arrayOfPossibleSeqToReturn;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #Reads file line by line and puts in an array.   >>>>This is now in Util

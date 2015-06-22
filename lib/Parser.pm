@@ -5,7 +5,7 @@ use Util;
 sub parseSequence {
 	# @args = ($filename, parser_ref1, parser_ref2, ...)
 	my ($filename, $parser) = @_;
-	open FILE, $filename or die "Couldn't open file: $!"; 
+	open FILE, $filename or die "Couldn't open file: $filename $!"; 
 	my $content_string = "";
 	while (<FILE>){
 		$content_string .= $_;
@@ -96,5 +96,39 @@ sub getAuthor {
 	return @ret;
 }
 
+#Subroutine to find all Non negative sequences and write them to file named NonNegSequences.txt
+#here I am using the all sequences of folder not from file having all seq ids
+sub findNonNegativeSequences {
+	my @var="";
+	my @universeSequence;
+	my @negSeq; #sign
+	my @nonNegSeq; #nonn
+	
+	#Getting all sequence IDs from the folder containing CORE and DEGREE1 sequences
+	my @seqPool=Util::getLocalSequences("./db/sequences");
+	#print $#seqPool;
+	#print("\n\n");
+	for (my $i=0; $i < $#seqPool+1; $i++)
+	{
+		@var = Parser::parseSequence("./db/sequences/$seqPool[$i].txt", \&Util::getKeyValues);
+		#Util::printArray(@var);	
+		if ( grep( /^nonn$/, @var ) ) {
+			#print "\nNon Neg for seq id: $seqPool[$i]\n";
+			push @nonNegSeq, $seqPool[$i];
+		}	
+		elsif ( grep( /^sign$/, @var ) ) {
+			#print "\nNeg for seq id: $seqPool[$i]\n";
+			push @negSeq, $seqPool[$i];
+		}	
+		else{
+			#print "\nOther Case: $seqPool[$i]\n";
+			push @universeSequence, $seqPool[$i];
+		}	
+	}
+	
+	&Util::writeArrayToFile("./db/Strange.txt",@universeSequence);
+	return @nonNegSeq;
+	
+}
 
 1;
