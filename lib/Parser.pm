@@ -34,6 +34,7 @@ sub getReferences {
 	return @seq_clean;
 }
 
+
 sub getName {
 	my $string = shift;
 	# retrieves the id of the sequence that is being parsed to remove it from results
@@ -130,5 +131,69 @@ sub findNonNegativeSequences {
 	return @nonNegSeq;
 	
 }
+
+sub getCrossRefs {
+	my $string = shift;
+	# retrieves the id of the sequence that is being parsed to remove it from results
+	my $var = "";
+	$var = $1 if $string =~ /^%Y\sA[0-9]{6,8}\s((.|\n%Y)*)\n%[^Y]/mg;
+	$var =~ s/%Y\sA[0-9]{6,8}//g;
+	#$var =~ s/^_//;
+	#$var =~ s/_$/ /;
+	
+	my @ret = split(/\n/, $var);
+	return @ret;
+}
+
+sub getCrossRefsComplement {
+	my $string = shift;
+	# retrieves the id of the sequence that is being parsed to remove it from results
+	my $var;
+	$var = $1 if $string =~ /[Cc]omplement.*[^\.,;]*(A[0-9]{6,8})[;,.\n]/mg;
+	if(!defined($var)) {
+		$var = $1 if $string =~ /[\n;.,]*(A[0-9]{6,8})[^\.,;]*[Cc]omplement/mg;
+	}
+
+	print "ALERTA ALERTA ---------------\n" if $string =~ m/.*[Cc]omplement.*/ and !defined($var);
+	sleep(3) if $string =~ m/.*[Cc]omplement.*/ and !defined($var);
+	my @var = $var =~ /(A[0-9]{6,8})/g;
+	
+	return @var;
+}
+
+sub getCrossRefsSubsequenceOf {
+	my $string = shift;
+	# retrieves the id of the sequence that is being parsed to remove it from results
+	my $var;
+	$var = $1 if $string =~ /[Ss]ubsequence[^s].*[^\.,;].*(A[0-9]{6,8})[;,.\n]/mg;
+	if(!defined($var)) {
+		$var = $1 if $string =~ /[\n;.,]*(A[0-9]{6,8})[^\.,;]*[Ss]ubsequence[^s]/mg;
+		
+	}
+	
+	print "ALERTA ALERTA ---------------\n" if $string =~ m/.*[Ss]ubsequence[^s].*/ and !defined($var);
+	sleep(3) if $string =~ m/.*[Ss]ubsequence[^s].*/ and !defined($var);
+	my @var = $var =~ /(A[0-9]{6,8})/g;
+		
+	return @var;
+}
+
+sub getCrossRefsHasSubsequences {
+	my $string = shift;
+	# retrieves the id of the sequence that is being parsed to remove it from results
+	my $var;
+	$var = $1 if $string =~ /[Ss]ubsequence[s].*?[^\.,;](A[0-9]{6,8}.*)[;,.\n]/mg;
+
+	print "$var\n";
+	print "ALERTA ALERTA ---------------\n" if $string =~ m/.*[Ss]ubsequence[s].*/ and !defined($var);
+	sleep(3) if $string =~ m/.*[Ss]ubsequence[s].*/ and !defined($var);
+	my @var = $var =~ /(A[0-9]{6,8})/g;
+		
+	return @var;
+}
+
+
+
+
 
 1;

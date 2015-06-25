@@ -1,0 +1,10 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX uri: <http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#>
+
+SELECT DISTINCT ?x ?y
+WHERE { 
+	?x rdf:type uri:Sequence.
+	?x uri:hasID "A014630".
+	?x uri:hasCrossRef+ ?y.
+}

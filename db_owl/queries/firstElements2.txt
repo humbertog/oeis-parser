@@ -1,0 +1,11 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX uri: <http://www.semanticweb.org/humberto/ontologies/2015/2/Sequence.owl#>
+
+SELECT DISTINCT ?x ?nam ?xel
+	WHERE {
+		VALUES ?x {uri:A001477 uri:A000027 uri:A005117 uri:A013928 uri:A216345 uri:A156253 uri:A005408 uri:A008619 uri:A176271 uri:A000961 uri:A065515 uri:A110654 uri:A005180 uri:A036234}.
+		?x a uri:Sequence.
+		?x uri:hasName ?nam.
+		?x uri:hasFirstElements ?xel.
+	}

@@ -1,5 +1,7 @@
+db_owl/catalog-v001.xml
+model/catalog-v001.xml
+R/.Rapp.history
 db/core/*
 db/degree1/*
 db/sequences/*
-db_owl/catalog-v001.xml
-model/catalog-v001.xml
+db/test_sequences.txt
