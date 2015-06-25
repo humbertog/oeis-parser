@@ -607,6 +607,158 @@ sub computeParalellLambekSeq{
 	return @seqPara;
 }
 
+#this function returns the measeure provided 2 arrays containing complement
+
+#EXAMPLE
+# my @seq1=(0,2,3,5,7,8,11,90);
+# my @seq2=(4,6,9,9,10);
+# my $return=findComplementDirectlyWithMeasure(\@seq1,\@seq2);
+# print $return;
+sub findComplementDirectlyWithMeasure
+{
+	my ($array_ref1, $array_ref2) = @_;
+	my @seq1 = @{$array_ref1};
+	my @seq2 = @{$array_ref2};
+	# my @seq1=(0,2,3,5,7,8,11,90);
+	# my @seq2=(4,6,9,9,10);
+	# my @seq1=(1,1,1,1,1,1,1,1);
+	# my @seq2=(4,6,9,10);
+
+# my @seq1=(1,3,4,6,8,9,11,12,14,16,17,19,21,22,24,25,27,29,30,32,33,35,37,38,40,42,43,45,46,48,50,51,53,55,56,58,59,61,63,64,66,67,69,71,72,74,76,77,79,80,82,84,85,87,88,90,92,93,95,97,98,100,101,103,105,106,108,110);
+# my @seq2=(1,3,7,12,18,26,35,45,56,69,83,98,114,131,150,170,191,213,236,260,285,312,340,369,399,430,462,495,529,565,602,640,679,719,760,802,845,889,935,982,1030,1079,1129,1180,1232,1285,1339,1394,1451,1509,1568,1628,1689);
+	my @seq1New;
+	my @seq2New;
+	my @setUnion;
+	
+	my $returnFlag=0; 
+	my $measure1=0;
+	my $min = ($seq1[$#seq1], $seq2[$#seq2])[$seq1[$#seq1] > $seq2[$#seq2]];
+
+	if($min==$seq2[$#seq2])  #cut seq1
+	{       #print("\nIF\n");
+		foreach(@seq1)
+		{
+			if($_ <= $min+1)
+			{
+				push @seq1New,$_;
+			}
+		}	
+		@seq2New=@seq2;	
+	}
+	elsif($min==$seq1[$#seq1]) # cut seq2
+	{	#print("\nElsIF\n");
+		foreach(@seq2)
+		{
+			if($_ <= $min+1)
+			{
+				push @seq2New,$_;
+			}
+		}
+		@seq1New=@seq1;		
+	}
+	else
+	{	#print("\nElse\n");
+		@seq1New=@seq1;
+		@seq2New=@seq2;
+	}
+		
+	@seq1New=Util::unique(\@seq1New);
+	@seq2New=Util::unique(\@seq2New);
+
+	# print("Cut point: $min \n");
+	# print("\nSeq1 Old: @seq1 \n");
+	# print("Seq2 Old: @seq2 \n");
+	# print("\nSeq1 New: @seq1New \n");
+	# print("Seq2 New: @seq2New \n");
 
 
+	@setUnion=computeSetUnion(\@seq1New,\@seq2New);
+	#@setUnion=(@seq1New,@seq2New);
+	
+	@setUnion = sort { $a <=> $b } @setUnion;
+
+	#print "\nSize:$#setUnion\n" ;
+	#print "$_ " foreach (@setUnion);
+
+	if($setUnion[0]==0 or $setUnion[0]==1)
+	{
+		#Condition 1 check_______________________________________________________________________________________________
+		my $sizeOfSeq1=$#seq1New+1;
+		my $sizeOfSeq2=$#seq2New+1;
+		my $sizeOfUnion=$#setUnion+1;
+		
+		#print("\n|A|:$sizeOfSeq1 + |B|:$sizeOfSeq2 = |AuB|:$sizeOfUnion");	
+		
+		if($sizeOfSeq1 + $sizeOfSeq2 == $sizeOfUnion)
+		{
+			#print("\nCondition 1 OK\n");
+			$measure1= $sizeOfUnion/($#seq1+$#seq2+2);
+			#print ("\nM1: $measure1");
+			#print ("\nInt: $numOfExhaustedInt\n");
+			my $count=0;
+			for (my $i=0; $i <=$#setUnion-1; $i++)
+			{				
+				if($setUnion[$i+1]-$setUnion[$i]==1)
+				{
+					$count=$count+1;
+				}			
+			}
+			#print("\ncount:$count  Size=$#setUnion\n");
+			if($count == $#setUnion)
+			{
+				#print("\nCondition 2 OK\n");
+				$returnFlag=$measure1; 
+			}
+			else
+			{
+				#print("\nCondition 2 NOT OK\n");
+				$returnFlag=0; 
+			}
+			
+		}
+		else{
+			#print("\nCondition 1 NOT OK\n");
+			$returnFlag=0; 
+
+		}
+}
+	else
+	{
+		$returnFlag=0;
+	}
+	return $returnFlag;
+
+}
+
+
+
+
+
+sub computeSetUnion{
+#https://www.safaribooksonline.com/library/view/perl-cookbook/1565922433/ch04s09.html	
+        my ($array_ref1, $array_ref2) = @_;
+	my @a = @{$array_ref1};
+	my @b = @{$array_ref2};
+
+	my @isect;
+	my @diff;
+	my %isect;
+	my @union = @isect = @diff = ();
+	my %union = %isect = ();
+	my %count = ();
+
+	foreach my $e (@a) { $union{$e} = 1 }
+
+	foreach my $e (@b) {
+	    if ( $union{$e} ) { $isect{$e} = 1 }
+	    $union{$e} = 1;
+	}
+	@union = keys %union;
+	@isect = keys %isect;
+	# print "Union:\t$_\n" foreach (@union);
+	# print "Siz:$#union" ;
+	return @union;
+	}
+	
+	
 1;
